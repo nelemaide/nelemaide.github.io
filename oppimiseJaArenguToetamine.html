@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .sisu {
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: justify;
+    }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+  <title>Kutseportfell</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Eripedagoog klassiõpetaja Nele Maide</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://nelemaide.github.io/opiKeskonnaKujundamine.html">Õpikeskonna kujundamine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppimise ja arengu toetamine</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/Enesereflektsioon.docx">Enesereflektsioon
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/Enesereflektsioon%20eripedagoogilisest%20aspektist.docx">Enesereflektsioon gibbsi mudeli põhjal
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20loodu%20%C3%B5ppematerjalid">Õppematerjalid
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/t%C3%B6%C3%B6kavad">Õpi-ja õpetamistegevuse kavandamine
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Eripedagoogika%20kaust">Eripedagoogika
+          </a>
+        </li>
+        <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/Eripedagooglised%20projektid.docx">Eripedagoogilised projektid
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Tegevused%20klassijuhatajana">Tegevused klassijuhatajana
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="sisu">
+    <h1>
+      Õppimise ja arengu toetamine
+    </h1>
+    <p>
+      <h4>1. Lähtun õpetamisel õppija eripärast, seatud eesmärkidest ja ainetevahelisest lõimingust.</h4>
+      Õpetamisel lähtun õppija eripärast ning sean õppijast lähtuvalt lähemad ning kaugemad eesmärgid.
+      Oma töös lähtun ainetevahelisest lõimingust ning seon neid erinevate aktiivõppe meetoditega.
+      Näitena võin tuua ainepõhise tunni, kus matemaatika tööraamatu täitmisel lähtun õpilase huvidest ning lõimin tegevuse õppeainega,
+      milles on tal silmapaistvad õpitulemused.<br />
+      Näide: Matemaatika(Mauruse Matemaatika õpik 3.klassile) Maailmavallutajad sissejuhatus<br />
+      Elukutsed lk 5<br />
+      Üks HEV-õpilane on huvitatud ehitustest ning seega integreerisin matemaatika ülesande temale huvipakkuva tegevusega.<br />
+      Sel poolaastal õpime ja harjutame palju peastarvutamist: mõõtmist, kaardistamist, liitmist, lahutamist ning korrutamist ja jagamist.
+      <br /> Need on nagu tööriistad, mida läheb nii matemaatikas kui ka igapäevatöös rohkelt vaja.<br />
+      • Millised tööriistad kuuluvad ainult ühe kindla ameti juurde? <br />
+      Haamer, nael, joonlaud ning puidust alus -ehitaja. <br />
+      Löö nael puidu sisse nii, et naela kõrgus jääks ühel naelal 7,5 cm teisel 5 cm, kolmandal 4,5 cm,
+      neljandal 4cm ja viienda kõrguse võid ise vabalt valida. <br />
+      <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/1.jpg" width="640" /><br />
+      <h4>2. Rakendan õpetamisel erinevaid meetodeid ja rutiinseid toiminguid (nt eelteadmiste väljaselgitamine, oodatud õpitulemustest ja -tegevustest teavitamine, õpitegevused eesmärkide saavutamiseks, kokkuvõte saavutatud tulemustest, tagasiside).
+      </h4>
+      Õppetöö sisukamaks muutmisel rakendan ma erinevaid meetodeid. Oma töös kasutan palju näitlikustamist, mis on lõimitud õppemängudega. Palju kasutan ka kunstiteraapia, loovteraapia ning loomateraapia alaseid võtteid. Antud metoodikaid kasutan ma
+      uue osa õpetamisel, eelteadmiste väljaselgitamisel kui ka teadmiste kontrolli puhul.<br />
+
+      <div class="row">
+        <div class="column">
+          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/2.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/3.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/4.jpg" style="width:100%">
+        </div>
+      </div>
+
+
+      <h4>3. Analüüsin õpetamist ning kohandan tegevusi paindlikult lähtuvalt õppijate vajadustest.</h4>
+      Analüüsin õpetamist ja kohandan tegevusi vastavalt õppijate vajadustele. Hariduslike erivajadustega laste tunnis esmalt kontrollin eelnevas tunnis omandatud ning kordame üle õpitu(10 minutit). Edasi õpetan ma õpilastele uut osa siin asetan rõhu
+      väga intensiivsele õppimisele(20 minutit). Tunni viimases osas, kus laste tähelepanuvõime on juba vähenenud leian neile lihtsaaid mängulisi tegevusi, mis kinnistaks õpitut(10 minutit). Viimasel 5 minuti jooksul märgime ülesse kodused ülesanded
+      ning teostame mõned lõõgastavad harjutused.
+      <h4>4. Märkan konflikti tekkimise võimalust, oskan valida sobivad sekkumistegevused, leida tõhusaid lahendusi ning vajadusel kaasata konflikti lahendamisse kolleege, õppijaid, tugispetsialiste ning lapsevanemaid.</h4>
+      Märkan konflikti tekkimise võimalusi ning oskan ennetavalt juba varakult sekkuda, et vältida üldse konflikti tekkimist eos. Oma klasiiõpetajana võin julgelt väita, et meie klassis selliseid situatsioone ei tekigi. Juhul, kui tulevikus peaks
+      leidma aset mõni konflikte situatsioon siis kindlasti kaasan kohe konflikti lahendamisse kolleege ja tugispetsialiste, hiljem ka lapsevanemaid.
+      <div class="row">
+        <div class="column">
+          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/33.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/34.jpg" style="width:100%">
+        </div>
+      </div>
+      <h4>5. Märkan ning arvestan õppeprotsessis õppijate erinevusi ja erivajadusi (nt õpistiilid, andekus, õpiraskused, kultuurilised eripärad) ning kaasan vajadusel õppija arengu toetamiseks kolleege, tugispetsialiste ja lapsevanemaid.</h4>
+      Lähtuvalt oma põhierialast eripedagoogina on mu minu eripäraks märgata laste erisusi ning koheselt teha ka tähelepanekuid. Õpilaste toetamiseks enamasti ma ei kaasa õpilasenõustamiseks kolleege, tugispetsialiste. Küll, aga teen tihedat koostööd
+      koduga, et nõustada lapsevanemaid. Näiteks toon ma oma klassi HEV- õpilase peal, kes segab vahel tundi ja ei soovi harjutusi kaasa teha. Juba eelnevalt tajun ma ära rahutuse ning ärevuse. Seega saan HEV – õpilast juba eelnevalt suunata
+      alternatiivsele tegevusele. Leian tema jaoks alati ül, mis talle meeldiksid meeldiks ja seeläbi mängides täita õppe-eesmärke. Andekatele ja kiirematele õpilastele võtan tundi kaasa lisa ülesanded.
+
+      <div class="row">
+        <div class="column">
+          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/77.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/78.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/79.jpg" style="width:100%">
+        </div>
+      </div>
+      <h4>6. Toetan õppijate õpi- ja sotsiaalseid oskusi, kasutades erinevaid rühmapõhiseid ja individuaalseid õppevorme.</h4>
+      Oma tööd kasutan ma palju rühmapõhiseid ja individuaalseid õppevorme. Sõnamänge või muid võistluslikke tegevusi tehes jagan klassi meeskondadeks. Üheks suureks ja oluliseks oskuseks on meeskonnas tegutsemine – kasutades seejuures ära kõikide
+      õpilaste tugevaimaid külgi. Nii tunneb iga rühmatöös osalenu ennast vajaliku ja väärtuslikuna.<br /><br />
+      <h4>7. Motiveerin õppima, pakkudes elulisi jõukohaseid õppeülesandeid ja luues eduelamuse igale õppijale.</h4>
+      Motiveerin õppima ja kohandan õppeülesandeid nii, et õpilasel oleks võimalik saavutada eduelamus. Haridusliku erivajadusega lastele annan ülesandeid, kus õige vastuse kirjutamise asemel tuleb see üles leida ja joonega ühendada. Julgustan ja
+      motiveerin õpilasi osalema ainealastesl võistlustel.<br /><br />
+      <h4>8. Rakendan süsteemselt erinevaid õppimist toetavaid tagasiside ja hindamise viise (sh kujundav hindamine), lähtudes õppija eripärast ja hindamist reguleerivatest dokumentidest. </h4>
+      Rakendan erinevaid tagasiside ja hindamise viise, hindan kõiki õpilasi hindeliselt ja kirjutan igale õpilasele e-kooli lühikese kirjelduse tema töö positiivsetest külgedest ja sellest, mida võiks paremini teha.
+      <br /><br /><h4>9. Toetan ennastjuhtiva õppija kujunemist, suunates õppijat individuaalsete õpieesmärkide seadmisele ja eneseanalüüsile. </h4>
+      Lähtuvalt õpilase tugevatest külgedest suunan teda individuaalsete õpieesmärkide seadmisele ja eneseanalüüsile. Olen oma õpilaste suhtes toetav ja julgustav.
+
+      <br /><br /><h4>10. Koostan ja rakendan hindamismudeleid,kriteeriume, teavitan nendest õppijaid. </h4>
+      Koostan ja rakendan erinevatest õpiolukordadest lähtuvalt erinevaid hindamismudeleid ja teavitan neist õpilasi. Kriteeriumid on põhjalikult iga hinde kohta välja toodud.
+
+    <br /><br />  <h4>11. Kaasan õppijaid õpitegevusse, tagasiside andmisse ja hindamisse, kasutades erinevaid meetodeid. </h4>
+      Kaasan õppijaid õpitegevusse lubades neil tunni tegevustes kaasa rääkida. Tagasiside andmisse ning hindamisse lastes neil hinnata enda või kaasõpilase töid. Õpilasi suuna märkama õpilaste töödest rõhudes neid leida. Mis on hästi.
+
+    <br /><br />  <h4>12. Väärtustan õppijat, pean tähtsaks eetilisi tõekspidamisi, järgin õpetaja kutse-eetikat. </h4>
+      Pean õpilasest lugu, suhtun temasse sõbralikult ja jagan temaga oma eetilisi tõekspidamisi. Proovin oma kõne ja käitumisega eeskujuks olla.
+
+    </p>
+  </div>
+
+
+</body>
+
+</html>
