@@ -1,223 +1,254 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <style>
-    .sisu {
-      line-height: 30px;
-      padding-left: 260px;
-      padding-right: 260px;
-      text-align: justify;
-    }
+  .sisu {
+    line-height: 30px;
+    padding-left: 260px;
+    padding-right: 260px;
+    text-align: justify;
+  }
 
-    .galerii {
+  .galerii {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+  }
+    main {
+      padding: 0;
+    }
+    header {
+      position: sticky;
+      top: 0;
       text-align: center;
-      width: 600px;
-      margin: auto;
+      z-index: 1;
     }
-
     footer {
       text-align: center;
     }
   </style>
   <title>Kutseportfell</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
-
 <body>
-  <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Klassiõpetaja Nele Maide</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppija toetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/opetamine.html">Õpetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/arendusJaLoometegevus.html">Arendus-, loome- ja teadustegevus</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/eneseReflektsioon.html">Refleksioon ja professionaalne enesearendamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/koostoo.html">Koostöö ja juhendamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/HEV.html">Hariduslike erivajadustega õppija toetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/labivadKompetentsid.html">Läbivad kompetentsid</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV <i class='far fa-file-word' style='font-size:1rem;color:orange'></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte <i
-              class='far fa-folder' style='font-size:1rem;color:orange'></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle <i class='far fa-folder'
-              style='font-size:1rem;color:orange'></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii <i class='far fa-image' style='font-size:1rem;color:orange'></i>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-  <div class="sisu">
-    <p>
-      <h1>Õpetamine</h1>
-      <h2>Õppija arengu toetamine</h2>
-
-
-      Eesmärgistamine ja avatud õpetamine on minu jaoks olulisel kohal. Usun, et õpilasel on lihtsam teemat mõista kui ta teab, mis seondub antud teemaga ja mis edasi saama hakkab. Seega püstitan alati iga teemabloki alguses  eesmärgid ning toon  välja õpiväljundid, kasutades  Innove lehte, et õpilased saaksid aru, mida endast kujundab riiklik õppekava, olulisel kohal on ka õpilaste arusaam erinevate ainete õpiväljundeid vaadata ning selle abil ka oma arengut reflekteerida. Kui oleme kuidagi kolleegiga antud teemat läbi arutanud ja teistes ainetes  rohkem või vähem seotud tegevusi, siis toome alati teemaga seonduva välja.<br/>
-      Eesmärgistatud peab olema ka iga individuaalne kui ka liitklassitund, kus on selgelt välja toodud millega ja miks me täna tunnis sellega tegeleme, kuid ka see, kuidas antud teema on seotud meie ühiskonda ja kogu ümbritsevaga.<br/>
-      Sõltuvalt suurematest tegemistest eesmärgistame koos õpilastega oma tegevusi kas nädal või kuu aega ennem. Enamasti kasutame eesmärgistamisel lihtsamaid vorme,  näite kasutan  töökavade sektsioone .Näiteks oli ühe õpilase eesmärgiks hakata tegema  videot, mis räägiks igapäevasest koolielust. Tegu oli õpilasega, kes arvas, et õpilste koolipäeval on üsna piiratud. Oma video pidi ta teostama  ühest koolipäevast ja filmima see juures kogu tegevust koolis nii tunniajal kui ka vahetundides ja  koolipäeva lõpus.
-      <br/>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/3kFVlhkzyEw">
-      </iframe>
-      <br/>
-
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/yjUUjEci_TU">
-      </iframe>
-      <br/>
-
-    </br/>
-      Tundide eesmärgistamist olen õpinud ja täiendanud pidevalt, kuid on olnud olukordi kui seame tundide eesmärgid kolleegidega koostöös ehk siis igas aines tegeletakse eesmärkidega - nii pole see üksiküritus, mis õpilastel ühe aine piiresse jääb ega kandu selle edasi. Kindlasti on eesmärgistamise puhul oluline vaadata hiljem tulemustele tagasi ning analüüsida mis läks planeeritult ning mis mitte ning leida põhjused, ühesõnaga toimub pidev mõtteline tööanalüüs.<br/>
-      Õpilased seavad tunni eesmärgid viisil, et ka ma oman eesmärkidele ligipääsu või ongi osa ülesandest saada õpetajalt "kooskõlastus", et mõlema poole hinnangul on eesmärgid piisavalt jõukohased aga nõuavad pingutust. Sellisel viisil olen ka mina kaasas õpilaste enestele seatud ootustega ning saan õpiprotsessi vastavalt vajadusele suunata või kohandada. Just matemaatikas on tulnud ette, et pärast eesmärgistamist kohendame sisu veidi ümber, seda just lähtuvalt õpilaste eesmärkidest tulnud fookusega (üldpädevused ja õpiväljundid peavad siiski endiselt saavutuma). Tihti tuleb leida viise, mis õpilasi rohkem motiveerib.<br/>
-<br/>
-
-      <h2>Klassi või rühma juhtimine </h2>
-
-      Klassi juhtimise edukus oleneb , sellest kuidas toime tulla erinevate harjumuste ja võimetega õpilastega, tagamaks laste toimetuleku õppetöös ja suhetes eakaaslaste ning täiskasvanutega? Õigem oleks öelda, et klassi juhtimise ja distsipliini küsimustest on pea kõikidel tasanitel pigem mööda vaadatud, pidades seda iga õpetaja isiklikus ülesandeks. Üldlevinud on seisukoht, mille kohaselt kõik klassidistsipliiniga seonduvad probleemid muutuvad olematuks, kui õpetajal on igaks tunniks seatud eesmärgid, mida ta aktiivselt ja tulemusrikkalt realiseerib. Kahjuks ei realiseeru sageli õpetaja kõige paremadki kavatsused, sest edukas õpetamine on seotud kahe vältimatu komponendiga - nendeks on õpilaste efektiivne juhendamine ja klassi juhtimine. Klassi juhtimise all mõistan protseduure, planeeritud harjutusi ja enda poolt kavandatud ja hästi ettevalmistatud tegevusi, mis aitavad muuta keskkonna, milles lapsed viibivad nende jaoks turvaliseks ja arusaadavaks. Hästi juhitud klassi tunnuseks on vajalikud vahendid ja materjalid klassi jaoks, kõikidele olulise informatsiooni kättesaadavus. Nii puudutab klassi juhtimine nii õppetundide head ettevalmistust kui ka klassi õpilaste motiveeritust olla huvitatud klassis toimuvast. Klassi juhtimine on seega strateegia, tagamaks sõbraliku õhkkonda ja tegutsemistahet klassis. Klassis, mille kohta öeldakse, et seal on hea distsipliin, peaksid kõik või enamik õpilasi täitma kokkulepitud ülesandeid ja käitumisnorme, milles nad koos öpetajaga on kokku leppinud.<br/>
-
-
-      Õpetajana olen tõsiselt mures sellepärast, et paljudel lastel puudub lugupidamine täiskasvanute vastu. Mõned lapsed on täis vaenu ja vihkamist kõigi vastu, kes neid ümbritsevad. Osadel lastele ei ole maailm turvaline paik ja õpetaja on sageli ainus inimene, kes suudab lapsele kaitstust pakkuda. Ilmselt see tuleb sellest, et meie koolis käib lastekodu lapsi.<br/>
-      Kõlbelise kasvatuse oluliseks vahendiks on distsipliinitunde arendamine, mis siiski ei ole eesmärgiks omaette, vaid mille abil ma saan lastesse sisendada neid positiivseid väärtusi, milleta inimestel on üksteisega raske toime tulla. <br/>
-      Õpetajana, loodan üksnes välistele kontrollimeetoditele, et saavutada vaid näilist edu: lapsed täidavad kokkuleppeid ja reegleid vaid  kindla järelvalve all, teistes olukordades, kui õpetajat ei ole läheduses, võib nende käitumine olla ettearvamatu .<br/>
-
-      Minu kui õpetaja autoriteet põhineb eeskätt tõsiasjal, et tema kätte on usaldatud õpilased, kelle õpetamiseks ja kasvatamiseks ta peab olema suuteline looma sobiva arengukeskkonna ja tagama laste turvatunde klassis. Selline vastutus annab õpetajale õiguse esitada lastele teatud nõudmisi tunnis töötamiseks, klassireeglite järgimiseks ja õpilaste korralekutsumiseks, kui nad oma käitumisega häirivad mõnd kaaslast või kogu klassi.<br/>
-      Õpetaja on ühtlasi ka moraali suunaja, selgitades õpilastele, miks ei ole viisakas vahele segada, kasutada hüüdnimesid, võtta teiste asju luba küsimata .<br/>
-
-      Ühiste reeglite koostamine. Esimeseks võimaluseks õpilaste vastutustunde arendamisel klassi moraalse distsipliini eest on nende kaasamine klassi reeglite koostamisse. Kui õpetaja ja õpilased sõnastavad reeglid koos, siis juba reeglite loomine ise on oluline ühistegevus, mis tõstab iga klassi õpilase vastutust nende täitmise eest. <br/>
-      Õpetajana arvan, et palju lihtsam viis on ise reeglid seada ja õpilastelt nende täitmist nõuda.<br/>
-
-
-      Reeglid on  loomulik kindlaks määrata, kui on teada lapsi huvitav küsimus: mis juhtub siis, kui reegleid rikutakse? Kui midagi ei juhtu, harjub õpilane neid reegleid mitte tõsiselt võtma.
-      Üheks võimaluseks kehtestatud reeglid maksma panna, on arutada koos klassiga, mida reeglite rikkumise puhul teha. Algklassiõpilased pakuvad tavaliselt üsna erinevaid karistusi, sest nad võtavad kokkuleppeid tõsiselt ja tahavad seda ka õpetajale näidata. Õpetajana, olen suutnud lapsed kaasata kaasamõtlemisele reeglite üle, saab juba vajalikest reeglitest rääkides  arendada mõtlemist ka selles suunas, millised võiksid olla reeglite rikkumisetagajärjed. Kui reeglid on vastu võetud koos klassiga, on ühiseid kokkuleppeid ka edaspidi kergem täita.<br/>
-
-      Õpetajana saan määrata paindlikke meetmeid, jättes endale võimaluse otsustada igal konkreetsel juhul eraldi. Paindlik lähenemine arvestab lapse enesetunnet ja tema kodust olukorda. Õnneks on minu klass väga soe ja sõbralik ning meil ei esine klassis reeglite rikkumisi.<br/>
-
-
-<br/>
-      <h2>Õppijate motiveerimine ja nende arengu jälgimine</h2>
-
-
-
-      Olen juba eelnevalt välja toonud, et suur osa minu õpetamisprotsessist põhineb suurematel ja väiksematel projektidel, mille kestel õpilased  jälgivad pidevalt oma tegevust, mis võimaldavad ka minul hoida silma peal erinevate eesmärkide täitmist, mille järgi õpilased oma töid toetavad ja mis on tööde lõpptulemused. video
-      Tagamaks seda, et iga õpilane saab tähelepanu ning ma ei jäta kunagi vaiksemaid õpilasi unarusse, tõmbasin igaks tunniks mitu õpilast, kes selles tunnis olid mul positiivses fookuses ning kellega pidin tänases tunnis natukene vestlema ning keda vastavalt olukorrale kiitma. See tegevus fookus on lisaks tavapärasele tunnitööle ja õpilaste juhendamisele. Niimoodi olen kindel, et igas tunnis olen ma õpilasele individuaalselt mõned minutid pühendanud.<br/>
-      Õpilaste arengut on hea jälgida õpimappide abil, kuhu koondusid kõikide õpilaste endi poolt tehtud tööd ning neid analüüsidest koorub palju välja nii õpilaste jaoks kui ka minu jaoks . Poolaasta lõpus vaatasin üle ka kõik märkmed, mida jooksvalt õpilaste kohta tegin ning kirjutasin tavaliselt ca 10-lauselise tagasiside, mille edastasin nii õpilastele kui ka lapsevanemale.<br/>
-      Mõtlen tihti selle peale, kuidas saaks õpilaste isiklikku arengut võimalikult palju koolis toetada ja edasi arendada ning alatase jõuan küsimuseni, et kus on tasakaalupunkt selle vahel, et õpilased julgeksid ennast avada  ja oma mõtteid väljendada, et see oleks piisavalt privaatne ega poleks sunduslik. Koostöös mentori ja õpetaja vahel on võimalik tuua rohkem detaile, et õpilased saaksid enda tugevusi ja huvisid arendada, olgu selleks mõni konkreetne meetod või õppekäik.<br/>
-<br/>
-      <h2>Hindamine ja tagasisidestamine </h2>
-
-
-      Hindamisel lähtun alati õppilaste, eripärast ning soorituses astmest individuaalselt. Samuti on olulisel kohal möödunud õppeprotsessile seatud eesmärkide ja õpiväljundite saavutamine. Mulle isiklikult numbrilised hinded  meeldivad, kuid mõningatel juhtudel on hinnangud palju efektiivsemad ning tunnen, et eesti keeles on numbri panek meeletult subjektiivne, sest annab alati juurde võimalikult vähe tagasisidet.<br/>
-      Õpilasest lähtuva hindamise puhul tuleb aluseks võtta nii õpilase eripära, kuid kindlasti ei saa ega tohi unustada õppekavas välja toodud üldpädevusi ning ainealaseid õpiväljundeid, seega on tagasiside aluseks õpilase sooritus õpiväljundite raamistikus, kuid arvestatakse ka arengut eelmisest hindamisest/protsessi jooksul. Seega ei ole õpilasest lähtuv ehk kujundav hindamine kindlasti vahend, millega kõik õpilaste tegevused sooritatuks loetakse, vaid võimalus vaadata protsessi laiemalt.<br/>
-      Üldiselt klassikalisi kontolltöid kasutan ma suhteliselt harva, vaid kasutan töid, kus  õpilased saavad üldraamistiku ning õpiväjundid, kus peavad saavutama vajaliku lõpptulemuse ning hiljem ka  tutvustavad nii mulle kui klassile antud töökäiku ja tulemust ning samuti tuleb neil välja tuua millised õpiväljundid kasutati ja kuidas antud lõpptulemus saavutati. Selgitada tuli tihti ka seda, millist üdpädevust ja kuidas töö käigus arendati. Näiteks 3. klassi teemabloki  puhul andsin tunni                     alguses taaskord õpiväljundid, mis oma tööga saavutada tuleb, lisaks tuleb tuua välja 2 üldpädevuse arendamist. Üks õpilane  joonistas , teine grupp  koostas  eesti keeles kirja , mis oli integreeritud lugemise ja arutlemisega  ning kolmas grup koostas video, mis kajastas  matemaatikas õpitut  . Pärast tuli tutvustada ning selgitada, kuidas ette antud õpiväljundid saavutati ning hindama teiste õpilaste ja enda  tegevust ning seda  suuliselt põhjendama. Selline lähenemine võimaldab õpilastel ise võtta vastutus oma soorituse eest laiemalt, sest elulistes olukordades on vaja probleemile mitmekülgsemat lähenemist kui vaid faktiteadmise analüüsi, usun siiralt, et kui õpilane teadmisega toimetab, kinnistub see paremini kui klassikalist kontrolltööd tehes, sest sellisel juhul arenevad õpilastel erinevad oskused, mida hilisemalt elus rakendada.<br/>
-      Kui õppeprotsessi on õpilased ka ise mingil määral planeerinud ning eesmägistanud, siis on lõpphinde kujunemisse kaasatud ka õpilaste enda hinnangud ning tihtilugu ka mõne kaaslase tagasiside vähemalt mingisugusele osale näiteks (oluline on märgata tugeviad külgi) või arutluste hinde osa on alati mõne klassikaalsase hinnang tööle. Erinevate esitluste juures olen rakendanud palju ka esinemise videosse võtmist ning seejärel endale video põhjal tagasiside andmist. video See protsess on õpilastele tihti väga ebamugav olnud, kuid juba paari korraga on arengud olnud silmnähtavad. Enda esinemisest salvestuse vaatamine  annab õpilasele võimaluse näha ennast antud olukorras just kui võõra pilguga ning seeläbi areneda avalikust esinemises julgust tohutult. Niimoodi on õpilane algusest peale läbi mõelnud oma esinemise, lisaks kui hiljem vaadata järgmist esinemist, siis saab juba analüüsida mis on muutunud antud esinemise juures paremaks ja kus on toimunud tagasilööke ja kuidas antud positiivset muutust elus hoida ja võimendada, ning tagasilööke ellimineerida. Niimoodi on mitmed avalikku esinemist kartnud õpilased oma hirmu, vähendanud või siis hoopis selja taha jätnud ning on tunduvalt julgemad ka igapäevases koolielus. Õpetaja vaatevinklist annab selline tagasiside meetod võimaluse panna õpilane iseennast analüüsima ka väliselt ning mõistma enda tugevusi ja arengukohti hoopis teise nurga alt. <br/>
-      Videoid oleme kasutanud korduvalt ka sellisel juhul kui tunniga on seotud mitu õpetajat ning kõik ei saa esitluste juures olla, nii saab kolleeg siiski osaleda hinde andmises. Leian, et see oli hea kogemus, sest tänases digtaliseerunud maailmas on üha rohkem tööalaseid olukordi, kus kõik tööprotsessis osalejad ei viib samas ruumis.<br/>
-      Korjan õpilastelt pidevat suulisttagasisidet ka enda jaoks. Nii on suure osa hindeliste tööde lõpus küsimused protsessi kohta ja õpilaste hinnangud minule väga olulised. ning näidata, et ka mina soovin ja tahan õppida, siis on õpilased meeleldi nõus aitama, kokkuvõtteks on kvaliteetsemad tunnid, paremad suhted ja motiveeritumad õpilased, sest nad tunnevad ja näevad, et nende ettepanekuid võetakse kuulda.<br/>
-<br/>
-      <h2>Digitehnoloogiate mõtestatud kasutamise toetamine</h2>
-
-      Digipädevust võib laiemalt defineerida kui enesekindlat, kriitilist ja loovat IKT kasutamist töös, õppimise, puhkuse ja ühiskonnaelus osalemisega seotud eesmärkide saavutamiseks. Digipädevus on IKT baasoskused, teadmised ja hoiakud, mis on igale õpilasele vajalikud selleks, et infoühiskonnas time tulla. Digipädevuste programmide eesmärk on kujundada terviklik lähenemine digipädevuse arendamiseks ja digivõimaluste eesmärgipäraseks kasutamiseks õppeprotsessis.<br/>
-      Üha olulisem on meie noortes kujundada loovust, innovatiivsust ning oskust ise uudset infotehnoloogiat kasutada. Seetõttu on Digitundide üheks olulisemaks ülesandeks seatud keerukamate IKT oskuste õpetamine koolides. Sellised oskused on näiteks robootika, veebidisain, ning wordi dokumentide koostamine jne.<br/>
-
-      Kaasaegse õpikäsituse tulemuslikule  õppekvaliteedi tõusule aitavad kaasa digipädevad õpilased ja õpetajad.  Digitaalsed õppevahendid ja õppematerjalid aitavad õppimist köitvamaks muuta,need toetavad õpetajat.
-      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/digitunnikava.docx">Näidis tund</a>
-      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Eesti%20keel%20etunnianal%C3%BC%C3%BCs.docx">Eestikeele tunnianalüüs</a>
-      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Matemaatika%20tunnianal%C3%BC%C3%BCs.docx">Matemaatika tunnianalüüs</a>
-      <div class="galerii">
-                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200107_113555.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200107_120424.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200108_100350.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_105254.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_115944.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_120017.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_124113.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_124116.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_125425.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200116_115509.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200116_115514.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-
-    </p>
-    <br />
-
-    <footer>
+  <main>
+    <header>
+      <div class="navi">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <button class="navbar-toggler" data-toggle="collapse" data-target=".navbars">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbars" id="collapse_target1">
+            <ul class="navbar-nav mx-auto">
+              <a class="navbar-brand">
+                <span>Nele Maide õpetaja kutseportfoolio</span>
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppija toetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/opetamine.html">Õpetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/arendusJaLoometegevus.html">Arendus-, loome- ja teadustegevus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/eneseReflektsioon.html">Refleksioon ja professionaalne enesearendamine</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <div class="collapse navbar-collapse navbars" id="collapse_target2">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/koostoo.html">Koostöö ja juhendamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/HEV.html">Hariduslike erivajadustega õppija toetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/labivadKompetentsid.html">Läbivad kompetentsid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV <i class='far fa-file-word' style='font-size:1rem;color:orange'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte <i
+                    class='far fa-folder' style='font-size:1rem;color:orange'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle <i class='far fa-folder'
+                    style='font-size:1rem;color:orange'></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii <i class='far fa-image' style='font-size:1rem;color:orange'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="sisu">
+      <p>
+        <h1>Õpetamine</h1>
+        <h2>Õppija arengu toetamine</h2>
+        Eesmärgistamine ja avatud õpetamine on minu jaoks olulisel kohal. Usun, et õpilasel on lihtsam teemat mõista kui ta teab, mis seondub antud teemaga ja mis edasi saama hakkab. Seega püstitan alati iga teemabloki alguses eesmärgid ning toon välja
+        õpiväljundid, kasutades Innove lehte, et õpilased saaksid aru, mida endast kujundab riiklik õppekava, olulisel kohal on ka õpilaste arusaam erinevate ainete õpiväljundeid vaadata ning selle abil ka oma arengut reflekteerida. Kui oleme kuidagi
+        kolleegiga antud teemat läbi arutanud ja teistes ainetes rohkem või vähem seotud tegevusi, siis toome alati teemaga seonduva välja.<br />
+        Eesmärgistatud peab olema ka iga individuaalne kui ka liitklassitund, kus on selgelt välja toodud millega ja miks me täna tunnis sellega tegeleme, kuid ka see, kuidas antud teema on seotud meie ühiskonda ja kogu ümbritsevaga.<br />
+        Sõltuvalt suurematest tegemistest eesmärgistame koos õpilastega oma tegevusi kas nädal või kuu aega ennem. Enamasti kasutame eesmärgistamisel lihtsamaid vorme, näite kasutan töökavade sektsioone .Näiteks oli ühe õpilase eesmärgiks hakata tegema
+        videot, mis räägiks igapäevasest koolielust. Tegu oli õpilasega, kes arvas, et õpilste koolipäeval on üsna piiratud. Oma video pidi ta teostama ühest koolipäevast ja filmima see juures kogu tegevust koolis nii tunniajal kui ka vahetundides ja
+        koolipäeva lõpus.
+        <br />
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/3kFVlhkzyEw">
+        </iframe>
+        <br />
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/yjUUjEci_TU">
+        </iframe>
+        <br />
+        </br />
+        Tundide eesmärgistamist olen õpinud ja täiendanud pidevalt, kuid on olnud olukordi kui seame tundide eesmärgid kolleegidega koostöös ehk siis igas aines tegeletakse eesmärkidega - nii pole see üksiküritus, mis õpilastel ühe aine piiresse jääb
+        ega kandu selle edasi. Kindlasti on eesmärgistamise puhul oluline vaadata hiljem tulemustele tagasi ning analüüsida mis läks planeeritult ning mis mitte ning leida põhjused, ühesõnaga toimub pidev mõtteline tööanalüüs.<br />
+        Õpilased seavad tunni eesmärgid viisil, et ka ma oman eesmärkidele ligipääsu või ongi osa ülesandest saada õpetajalt "kooskõlastus", et mõlema poole hinnangul on eesmärgid piisavalt jõukohased aga nõuavad pingutust. Sellisel viisil olen ka mina
+        kaasas õpilaste enestele seatud ootustega ning saan õpiprotsessi vastavalt vajadusele suunata või kohandada. Just matemaatikas on tulnud ette, et pärast eesmärgistamist kohendame sisu veidi ümber, seda just lähtuvalt õpilaste eesmärkidest
+        tulnud fookusega (üldpädevused ja õpiväljundid peavad siiski endiselt saavutuma). Tihti tuleb leida viise, mis õpilasi rohkem motiveerib.<br />
+        <br />
+        <h2>Klassi või rühma juhtimine </h2>
+        Klassi juhtimise edukus oleneb , sellest kuidas toime tulla erinevate harjumuste ja võimetega õpilastega, tagamaks laste toimetuleku õppetöös ja suhetes eakaaslaste ning täiskasvanutega? Õigem oleks öelda, et klassi juhtimise ja distsipliini
+        küsimustest on pea kõikidel tasanitel pigem mööda vaadatud, pidades seda iga õpetaja isiklikus ülesandeks. Üldlevinud on seisukoht, mille kohaselt kõik klassidistsipliiniga seonduvad probleemid muutuvad olematuks, kui õpetajal on igaks tunniks
+        seatud eesmärgid, mida ta aktiivselt ja tulemusrikkalt realiseerib. Kahjuks ei realiseeru sageli õpetaja kõige paremadki kavatsused, sest edukas õpetamine on seotud kahe vältimatu komponendiga - nendeks on õpilaste efektiivne juhendamine ja
+        klassi juhtimine. Klassi juhtimise all mõistan protseduure, planeeritud harjutusi ja enda poolt kavandatud ja hästi ettevalmistatud tegevusi, mis aitavad muuta keskkonna, milles lapsed viibivad nende jaoks turvaliseks ja arusaadavaks. Hästi
+        juhitud klassi tunnuseks on vajalikud vahendid ja materjalid klassi jaoks, kõikidele olulise informatsiooni kättesaadavus. Nii puudutab klassi juhtimine nii õppetundide head ettevalmistust kui ka klassi õpilaste motiveeritust olla huvitatud
+        klassis toimuvast. Klassi juhtimine on seega strateegia, tagamaks sõbraliku õhkkonda ja tegutsemistahet klassis. Klassis, mille kohta öeldakse, et seal on hea distsipliin, peaksid kõik või enamik õpilasi täitma kokkulepitud ülesandeid ja
+        käitumisnorme, milles nad koos öpetajaga on kokku leppinud.<br />
+        Õpetajana olen tõsiselt mures sellepärast, et paljudel lastel puudub lugupidamine täiskasvanute vastu. Mõned lapsed on täis vaenu ja vihkamist kõigi vastu, kes neid ümbritsevad. Osadel lastele ei ole maailm turvaline paik ja õpetaja on sageli
+        ainus inimene, kes suudab lapsele kaitstust pakkuda. Ilmselt see tuleb sellest, et meie koolis käib lastekodu lapsi.<br />
+        Kõlbelise kasvatuse oluliseks vahendiks on distsipliinitunde arendamine, mis siiski ei ole eesmärgiks omaette, vaid mille abil ma saan lastesse sisendada neid positiivseid väärtusi, milleta inimestel on üksteisega raske toime tulla. <br />
+        Õpetajana, loodan üksnes välistele kontrollimeetoditele, et saavutada vaid näilist edu: lapsed täidavad kokkuleppeid ja reegleid vaid kindla järelvalve all, teistes olukordades, kui õpetajat ei ole läheduses, võib nende käitumine olla
+        ettearvamatu .<br />
+        Minu kui õpetaja autoriteet põhineb eeskätt tõsiasjal, et tema kätte on usaldatud õpilased, kelle õpetamiseks ja kasvatamiseks ta peab olema suuteline looma sobiva arengukeskkonna ja tagama laste turvatunde klassis. Selline vastutus annab
+        õpetajale õiguse esitada lastele teatud nõudmisi tunnis töötamiseks, klassireeglite järgimiseks ja õpilaste korralekutsumiseks, kui nad oma käitumisega häirivad mõnd kaaslast või kogu klassi.<br />
+        Õpetaja on ühtlasi ka moraali suunaja, selgitades õpilastele, miks ei ole viisakas vahele segada, kasutada hüüdnimesid, võtta teiste asju luba küsimata .<br />
+        Ühiste reeglite koostamine. Esimeseks võimaluseks õpilaste vastutustunde arendamisel klassi moraalse distsipliini eest on nende kaasamine klassi reeglite koostamisse. Kui õpetaja ja õpilased sõnastavad reeglid koos, siis juba reeglite loomine
+        ise on oluline ühistegevus, mis tõstab iga klassi õpilase vastutust nende täitmise eest. <br />
+        Õpetajana arvan, et palju lihtsam viis on ise reeglid seada ja õpilastelt nende täitmist nõuda.<br />
+        Reeglid on loomulik kindlaks määrata, kui on teada lapsi huvitav küsimus: mis juhtub siis, kui reegleid rikutakse? Kui midagi ei juhtu, harjub õpilane neid reegleid mitte tõsiselt võtma.
+        Üheks võimaluseks kehtestatud reeglid maksma panna, on arutada koos klassiga, mida reeglite rikkumise puhul teha. Algklassiõpilased pakuvad tavaliselt üsna erinevaid karistusi, sest nad võtavad kokkuleppeid tõsiselt ja tahavad seda ka õpetajale
+        näidata. Õpetajana, olen suutnud lapsed kaasata kaasamõtlemisele reeglite üle, saab juba vajalikest reeglitest rääkides arendada mõtlemist ka selles suunas, millised võiksid olla reeglite rikkumisetagajärjed. Kui reeglid on vastu võetud koos
+        klassiga, on ühiseid kokkuleppeid ka edaspidi kergem täita.<br />
+        Õpetajana saan määrata paindlikke meetmeid, jättes endale võimaluse otsustada igal konkreetsel juhul eraldi. Paindlik lähenemine arvestab lapse enesetunnet ja tema kodust olukorda. Õnneks on minu klass väga soe ja sõbralik ning meil ei esine
+        klassis reeglite rikkumisi.<br />
+        <br />
+        <h2>Õppijate motiveerimine ja nende arengu jälgimine</h2>
+        Olen juba eelnevalt välja toonud, et suur osa minu õpetamisprotsessist põhineb suurematel ja väiksematel projektidel, mille kestel õpilased jälgivad pidevalt oma tegevust, mis võimaldavad ka minul hoida silma peal erinevate eesmärkide täitmist,
+        mille järgi õpilased oma töid toetavad ja mis on tööde lõpptulemused. video
+        Tagamaks seda, et iga õpilane saab tähelepanu ning ma ei jäta kunagi vaiksemaid õpilasi unarusse, tõmbasin igaks tunniks mitu õpilast, kes selles tunnis olid mul positiivses fookuses ning kellega pidin tänases tunnis natukene vestlema ning keda
+        vastavalt olukorrale kiitma. See tegevus fookus on lisaks tavapärasele tunnitööle ja õpilaste juhendamisele. Niimoodi olen kindel, et igas tunnis olen ma õpilasele individuaalselt mõned minutid pühendanud.<br />
+        Õpilaste arengut on hea jälgida õpimappide abil, kuhu koondusid kõikide õpilaste endi poolt tehtud tööd ning neid analüüsidest koorub palju välja nii õpilaste jaoks kui ka minu jaoks . Poolaasta lõpus vaatasin üle ka kõik märkmed, mida
+        jooksvalt õpilaste kohta tegin ning kirjutasin tavaliselt ca 10-lauselise tagasiside, mille edastasin nii õpilastele kui ka lapsevanemale.<br />
+        Mõtlen tihti selle peale, kuidas saaks õpilaste isiklikku arengut võimalikult palju koolis toetada ja edasi arendada ning alatase jõuan küsimuseni, et kus on tasakaalupunkt selle vahel, et õpilased julgeksid ennast avada ja oma mõtteid
+        väljendada, et see oleks piisavalt privaatne ega poleks sunduslik. Koostöös mentori ja õpetaja vahel on võimalik tuua rohkem detaile, et õpilased saaksid enda tugevusi ja huvisid arendada, olgu selleks mõni konkreetne meetod või õppekäik.<br />
+        <br />
+        <h2>Hindamine ja tagasisidestamine </h2>
+        Hindamisel lähtun alati õppilaste, eripärast ning soorituses astmest individuaalselt. Samuti on olulisel kohal möödunud õppeprotsessile seatud eesmärkide ja õpiväljundite saavutamine. Mulle isiklikult numbrilised hinded meeldivad, kuid
+        mõningatel juhtudel on hinnangud palju efektiivsemad ning tunnen, et eesti keeles on numbri panek meeletult subjektiivne, sest annab alati juurde võimalikult vähe tagasisidet.<br />
+        Õpilasest lähtuva hindamise puhul tuleb aluseks võtta nii õpilase eripära, kuid kindlasti ei saa ega tohi unustada õppekavas välja toodud üldpädevusi ning ainealaseid õpiväljundeid, seega on tagasiside aluseks õpilase sooritus õpiväljundite
+        raamistikus, kuid arvestatakse ka arengut eelmisest hindamisest/protsessi jooksul. Seega ei ole õpilasest lähtuv ehk kujundav hindamine kindlasti vahend, millega kõik õpilaste tegevused sooritatuks loetakse, vaid võimalus vaadata protsessi
+        laiemalt.<br />
+        Üldiselt klassikalisi kontolltöid kasutan ma suhteliselt harva, vaid kasutan töid, kus õpilased saavad üldraamistiku ning õpiväjundid, kus peavad saavutama vajaliku lõpptulemuse ning hiljem ka tutvustavad nii mulle kui klassile antud töökäiku
+        ja tulemust ning samuti tuleb neil välja tuua millised õpiväljundid kasutati ja kuidas antud lõpptulemus saavutati. Selgitada tuli tihti ka seda, millist üdpädevust ja kuidas töö käigus arendati. Näiteks 3. klassi teemabloki puhul andsin tunni
+        alguses taaskord õpiväljundid, mis oma tööga saavutada tuleb, lisaks tuleb tuua välja 2 üldpädevuse arendamist. Üks õpilane joonistas , teine grupp koostas eesti keeles kirja , mis oli integreeritud lugemise ja arutlemisega ning kolmas grup
+        koostas video, mis kajastas matemaatikas õpitut . Pärast tuli tutvustada ning selgitada, kuidas ette antud õpiväljundid saavutati ning hindama teiste õpilaste ja enda tegevust ning seda suuliselt põhjendama. Selline lähenemine võimaldab
+        õpilastel ise võtta vastutus oma soorituse eest laiemalt, sest elulistes olukordades on vaja probleemile mitmekülgsemat lähenemist kui vaid faktiteadmise analüüsi, usun siiralt, et kui õpilane teadmisega toimetab, kinnistub see paremini kui
+        klassikalist kontrolltööd tehes, sest sellisel juhul arenevad õpilastel erinevad oskused, mida hilisemalt elus rakendada.<br />
+        Kui õppeprotsessi on õpilased ka ise mingil määral planeerinud ning eesmägistanud, siis on lõpphinde kujunemisse kaasatud ka õpilaste enda hinnangud ning tihtilugu ka mõne kaaslase tagasiside vähemalt mingisugusele osale näiteks (oluline on
+        märgata tugeviad külgi) või arutluste hinde osa on alati mõne klassikaalsase hinnang tööle. Erinevate esitluste juures olen rakendanud palju ka esinemise videosse võtmist ning seejärel endale video põhjal tagasiside andmist. video See protsess
+        on õpilastele tihti väga ebamugav olnud, kuid juba paari korraga on arengud olnud silmnähtavad. Enda esinemisest salvestuse vaatamine annab õpilasele võimaluse näha ennast antud olukorras just kui võõra pilguga ning seeläbi areneda avalikust
+        esinemises julgust tohutult. Niimoodi on õpilane algusest peale läbi mõelnud oma esinemise, lisaks kui hiljem vaadata järgmist esinemist, siis saab juba analüüsida mis on muutunud antud esinemise juures paremaks ja kus on toimunud tagasilööke
+        ja kuidas antud positiivset muutust elus hoida ja võimendada, ning tagasilööke ellimineerida. Niimoodi on mitmed avalikku esinemist kartnud õpilased oma hirmu, vähendanud või siis hoopis selja taha jätnud ning on tunduvalt julgemad ka
+        igapäevases koolielus. Õpetaja vaatevinklist annab selline tagasiside meetod võimaluse panna õpilane iseennast analüüsima ka väliselt ning mõistma enda tugevusi ja arengukohti hoopis teise nurga alt. <br />
+        Videoid oleme kasutanud korduvalt ka sellisel juhul kui tunniga on seotud mitu õpetajat ning kõik ei saa esitluste juures olla, nii saab kolleeg siiski osaleda hinde andmises. Leian, et see oli hea kogemus, sest tänases digtaliseerunud maailmas
+        on üha rohkem tööalaseid olukordi, kus kõik tööprotsessis osalejad ei viib samas ruumis.<br />
+        Korjan õpilastelt pidevat suulisttagasisidet ka enda jaoks. Nii on suure osa hindeliste tööde lõpus küsimused protsessi kohta ja õpilaste hinnangud minule väga olulised. ning näidata, et ka mina soovin ja tahan õppida, siis on õpilased meeleldi
+        nõus aitama, kokkuvõtteks on kvaliteetsemad tunnid, paremad suhted ja motiveeritumad õpilased, sest nad tunnevad ja näevad, et nende ettepanekuid võetakse kuulda.<br />
+        <br />
+        <h2>Digitehnoloogiate mõtestatud kasutamise toetamine</h2>
+        Digipädevust võib laiemalt defineerida kui enesekindlat, kriitilist ja loovat IKT kasutamist töös, õppimise, puhkuse ja ühiskonnaelus osalemisega seotud eesmärkide saavutamiseks. Digipädevus on IKT baasoskused, teadmised ja hoiakud, mis on
+        igale õpilasele vajalikud selleks, et infoühiskonnas time tulla. Digipädevuste programmide eesmärk on kujundada terviklik lähenemine digipädevuse arendamiseks ja digivõimaluste eesmärgipäraseks kasutamiseks õppeprotsessis.<br />
+        Üha olulisem on meie noortes kujundada loovust, innovatiivsust ning oskust ise uudset infotehnoloogiat kasutada. Seetõttu on Digitundide üheks olulisemaks ülesandeks seatud keerukamate IKT oskuste õpetamine koolides. Sellised oskused on näiteks
+        robootika, veebidisain, ning wordi dokumentide koostamine jne.<br />
+        Kaasaegse õpikäsituse tulemuslikule õppekvaliteedi tõusule aitavad kaasa digipädevad õpilased ja õpetajad. Digitaalsed õppevahendid ja õppematerjalid aitavad õppimist köitvamaks muuta,need toetavad õpetajat.
+        <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/digitunnikava.docx">Näidis tund</a>
+        <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Eesti%20keel%20etunnianal%C3%BC%C3%BCs.docx">Eestikeele tunnianalüüs</a>
+        <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Matemaatika%20tunnianal%C3%BC%C3%BCs.docx">Matemaatika tunnianalüüs</a>
+        <div class="galerii">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200107_113555.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200107_120424.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200108_100350.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_105254.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_115944.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_120017.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_124113.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_124116.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200110_125425.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200116_115509.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://github.com/nelemaide/nelemaide.github.io/raw/master/OneDrive-2020-01-16%20(1)/20200116_115514.jpg" class="d-block w-100" alt="...">
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </p>
       <br />
-      <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Tagasi lehekülje algusesse</a>
-    </footer>
-  </div>
-
+      <footer>
+        <br />
+        <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Tagasi lehekülje algusesse</a>
+      </footer>
+    </div>
+  </main>
 </body>
-
 </html>

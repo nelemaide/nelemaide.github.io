@@ -4,6 +4,16 @@
 <head>
   <meta charset="utf-8">
   <style>
+    main {
+      padding: 0;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      text-align: center;
+    }
+
     .sisu {
       line-height: 30px;
       padding-left: 260px;
@@ -16,7 +26,6 @@
     }
   </style>
   <title>Kutseportfell</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -25,98 +34,107 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Klassiõpetaja Nele Maide</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppija toetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/opetamine.html">Õpetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/arendusJaLoometegevus.html">Arendus-, loome- ja teadustegevus</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/eneseReflektsioon.html">Refleksioon ja professionaalne enesearendamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/koostoo.html">Koostöö ja juhendamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/HEV.html">Hariduslike erivajadustega õppija toetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/labivadKompetentsid.html">Läbivad kompetentsid</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV <i class='far fa-file-word' style='font-size:1rem;color:orange'></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte <i
-              class='far fa-folder' style='font-size:1rem;color:orange'></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle <i class='far fa-folder'
-              style='font-size:1rem;color:orange'></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii <i class='far fa-image' style='font-size:1rem;color:orange'></i>
-          </a>
-        </li>
-      </ul>
-
+  <main>
+    <header>
+      <div class="navi">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <button class="navbar-toggler" data-toggle="collapse" data-target=".navbars">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbars" id="collapse_target1">
+            <ul class="navbar-nav mx-auto">
+              <a class="navbar-brand">
+                <span>Nele Maide õpetaja kutseportfoolio</span>
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppija toetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/opetamine.html">Õpetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/arendusJaLoometegevus.html">Arendus-, loome- ja teadustegevus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/eneseReflektsioon.html">Refleksioon ja professionaalne enesearendamine</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <div class="collapse navbar-collapse navbars" id="collapse_target2">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/koostoo.html">Koostöö ja juhendamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/HEV.html">Hariduslike erivajadustega õppija toetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/labivadKompetentsid.html">Läbivad kompetentsid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV <i class='far fa-file-word' style='font-size:1rem;color:orange'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte <i
+                    class='far fa-folder' style='font-size:1rem;color:orange'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle <i class='far fa-folder'
+                    style='font-size:1rem;color:orange'></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii <i class='far fa-image' style='font-size:1rem;color:orange'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="sisu">
+      <h1 style="text-align:center;">
+        Mina õpetajana
+      </h1><br/>
+      <p>
+        Juba päris väikese tüdrukuna tundsin ma sügavat huvi õppimise ja õpetamise vastu.
+        See kutsumus tuleb esile minust endast, algselt mängisin ma kooli ning kooliõpetajat nukkude ja karudega. Nuputasin välja põnevaid töölehti ja tegevusi, et jagada tarkuseid oma armsatele mänguloomadele. Ilmselt mängib siin suurt rolli
+        esivanemate, lähisugulaste ja ema eeskuju, kes kõik on olnud seotud kooli, hariduse ja õpetamisega. Ema poolses suguvõsas on olnud Põlula kooli direktor, tantsuõpetaja, muusikapedagooge ning ema lasteaia- ja kooli õpetajana. Isa poolne
+        suguvõsa
+        on olnud seotud keele- ja kirjanduse valdkonnaga. (tunnustatud ja tuntud teadlaste näol). Seega teadsin ma päris varakult, millise elukutse teekonna esindaja minust saab.<br /> Vaikselt asusin ma realiseerima iseenda lapsepõlve unistusi, mis
+        realiseerusid alles 2005. aastal mu esimeses töökohas Turba Gümnaasiumis, kus toona märkas minu potensiaali õpetajana direktor Viktor Juhanson. Üsna varsti suunati mind omandama õpetajakutset Tallinna Ülikooli. Läbides edukalt Kutseaasta
+        Tugiprogrammi 160 tundi saigi minust nooremõpetaja. Turba Gümnaasiumis töötasin ma algselt huvijuhina, ringidejuhendajana, asendusõpetajana ning pikapäevarühma õpetajana. Suundudes õpetamis maastikule olin ma alati innustunud õpetaja, kes on
+        oma õpilaste jaoks alati olemas olnud. Õpetajana saad sa edasi anda oma südamesoojust, väärtusi, õpetusi – mis on esmaseks ja peamiseks loomeallikaks väikse inimese isiksuse loomisel. Õpetajana on mind alati huvitanud aktiivõppe suund, mille
+        läbi
+        olen suutnud tekitada oma õpilastes sügavat huvi õppimise vastu. Võimalusel panen lapsed alati ise käega katsuma, kirjutama, tunnetama, sest läbi meelte me omandame õpitut palju kiiremini.
+        <br />Minu jaoks on väga oluline, et koolis oldud aeg on õpilase jaoks emotsionaaselt pingevaba ning laps tunneks end koolis olles turvaliselt. Peamine soov on see, et õpilase silmad säraksid ning ta ei tunneks hirmu algava koolipäeva ees.
+        Hea
+        sõna, südamesoojus ja usk oma õpilastesse. Usk isegi siis, kui su õpilasel esineb mõningaid raskusi õppeainete omandamisel. Oluline on märgata ka väikeseid edusamme ja neid tunnustada ning tunda siirast rõõmu ka nende väikeste saavutuste üle.
+        Need on
+        väärtused, sisemised hoiakud, mida pole võimalik õppida küll, aga saame me seda teadmiste pagasit peegeldada ning kanda edasi oma õpilastele. Minu õppe – ja kasvatustegevused on mängulised, sest nii omandab laps õpitut kõige paremini ning
+        seeläbi võime kindlad olla, et õpitu ka kinnistub. Tunnid peavad olema alati põnevad, loovad ning inspireerivad. Ainult sellise metoodikaga saame me tagada huvi õppimise vastu. Oma tegevuste läbiviimisel kasutan ma õpetajana palju loovust,
+        mängulisust, aktiivõpet, avastusõpet ja õuesõpet. Need on need valdkonnad, mis mind ennastki sügavalt kõnetavad. Lastele ma õpetangi võimalusel, et õppimine ei toimu ainult koolis vaid ka väljapool kooli, mis annab meile rohkelt võimalusi
+        parimaks enesearenguks(huviringid, raamatud, reisimine,rahvusvahelised laagrid, projektid või vahetusõpilaseks olemine). Ainult nii saame me tagada õpilase parima arengu tehes koostööd kodu ja kooliga. Õpetajana püüan mina ainet võimalikult
+        hästi õpetada ja alati arvestada iga õpilase individuaalseid võimeid ning edasiminekut. Pean väga oluliseks ka õpilaste silmaringi avardamist ning toetamist.<br />
+        Õpetajana meeldib mulle alati jagada vahvaid ideid õpilaste,lastevanemate,õpetajate ja juhtkonnaga. Ma rõõmustan selle üle, et meie klassis töötav abiõpetaja saab osa kõikidest õppetööd puudutavatest hetkedest ning on minu väga suureks
+        abiliseks. Mind rõõmustab seegi, kui psühholoog külastab tundi ning analüüsib professionaalselt ning oskuslikult minu tööd õpetajana. Olen täna õnnelik, et mu õpetaja teekond on mind viinud Kernu Põhikooli tänu meie direktorile Marek
+        Männikule
+        saan ma töötada nii armsas ja väikses Bullerbilikus koolis. Direktor pakub omalt poolt parimaid võimalusi enesetäienduseks, märgates ka väikseid asju, mille läbi arenen ma tohutult saamaks veel paremaks õpetajaks, kui praegu olen. Tänasel
+        päeval võin ma julgelt väita, et olen taas leidnud selle õige kooli ja keskkonna, kuhu pühenduda ja anda enda panus. Olen väga tänulik, et kogu meie koolipere, lapsevanemad ja mu enda pere toetavad mind sellel õpetajaks olemise teekonnal.
+      </p>
+      <footer>
+        <br />
+        <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Tagasi lehekülje algusesse</a>
+      </footer>
     </div>
-  </nav>
-  <div class="sisu">
-    <h1>
-      Mina õpetajana
-    </h1>
-    <p>
-      Juba päris väikese tüdrukuna tundsin ma sügavat huvi õppimise ja õpetamise vastu.
-      See kutsumus tuleb esile minust endast, algselt mängisin ma kooli ning kooliõpetajat nukkude ja karudega. Nuputasin välja põnevaid töölehti ja tegevusi, et jagada tarkuseid oma armsatele mänguloomadele. Ilmselt mängib siin suurt rolli
-      esivanemate, lähisugulaste ja ema eeskuju, kes kõik on olnud seotud kooli, hariduse ja õpetamisega. Ema poolses suguvõsas on olnud Põlula kooli direktor, tantsuõpetaja, muusikapedagooge ning ema lasteaia- ja kooli õpetajana. Isa poolne suguvõsa
-      on olnud seotud keele- ja kirjanduse valdkonnaga. (tunnustatud ja tuntud teadlaste näol). Seega teadsin ma päris varakult, millise elukutse teekonna esindaja minust saab.<br /> Vaikselt asusin ma realiseerima iseenda lapsepõlve unistusi, mis
-      realiseerusid alles 2005. aastal mu esimeses töökohas Turba Gümnaasiumis, kus toona märkas minu potensiaali õpetajana direktor Viktor Juhanson. Üsna varsti suunati mind omandama õpetajakutset Tallinna Ülikooli. Läbides edukalt Kutseaasta
-      Tugiprogrammi 160 tundi saigi minust nooremõpetaja. Turba Gümnaasiumis töötasin ma algselt huvijuhina, ringidejuhendajana, asendusõpetajana ning pikapäevarühma õpetajana. Suundudes õpetamis maastikule olin ma alati innustunud õpetaja, kes on
-      oma
-      õpilaste jaoks alati olemas olnud. Õpetajana saad sa edasi anda oma südamesoojust, väärtusi, õpetusi – mis on esmaseks ja peamiseks loomeallikaks väikse inimese isiksuse loomisel. Õpetajana on mind alati huvitanud aktiivõppe suund, mille läbi
-      olen
-      suutnud tekitada oma õpilastes sügavat huvi õppimise vastu. Võimalusel panen lapsed alati ise käega katsuma, kirjutama, tunnetama, sest läbi meelte me omandame õpitut palju kiiremini.
-      <br />Minu jaoks on väga oluline, et koolis oldud aeg on õpilase jaoks emotsionaaselt pingevaba ning laps tunneks end koolis olles turvaliselt. Peamine soov on see, et õpilase silmad säraksid ning ta ei tunneks hirmu algava koolipäeva ees. Hea
-      sõna,
-      südamesoojus ja usk oma õpilastesse. Usk isegi siis, kui su õpilasel esineb mõningaid raskusi õppeainete omandamisel. Oluline on märgata ka väikeseid edusamme ja neid tunnustada ning tunda siirast rõõmu ka nende väikeste saavutuste üle. Need on
-      väärtused, sisemised hoiakud, mida pole võimalik õppida küll, aga saame me seda teadmiste pagasit peegeldada ning kanda edasi oma õpilastele. Minu õppe – ja kasvatustegevused on mängulised, sest nii omandab laps õpitut kõige paremini ning
-      seeläbi võime kindlad olla, et õpitu ka kinnistub. Tunnid peavad olema alati põnevad, loovad ning inspireerivad. Ainult sellise metoodikaga saame me tagada huvi õppimise vastu. Oma tegevuste läbiviimisel kasutan ma õpetajana palju loovust,
-      mängulisust, aktiivõpet, avastusõpet ja õuesõpet. Need on need valdkonnad, mis mind ennastki sügavalt kõnetavad. Lastele ma õpetangi võimalusel, et õppimine ei toimu ainult koolis vaid ka väljapool kooli, mis annab meile rohkelt võimalusi
-      parimaks enesearenguks(huviringid, raamatud, reisimine,rahvusvahelised laagrid, projektid või vahetusõpilaseks olemine). Ainult nii saame me tagada õpilase parima arengu tehes koostööd kodu ja kooliga. Õpetajana püüan mina ainet võimalikult
-      hästi õpetada ja alati arvestada iga õpilase individuaalseid võimeid ning edasiminekut. Pean väga oluliseks ka õpilaste silmaringi avardamist ning toetamist.<br />
-
-      Õpetajana meeldib mulle alati jagada vahvaid ideid õpilaste,lastevanemate,õpetajate ja juhtkonnaga. Ma rõõmustan selle üle, et meie klassis töötav abiõpetaja saab osa kõikidest õppetööd puudutavatest hetkedest ning on minu väga suureks
-      abiliseks. Mind rõõmustab seegi, kui psühholoog külastab tundi ning analüüsib professionaalselt ning oskuslikult minu tööd õpetajana. Olen täna õnnelik, et mu õpetaja teekond on mind viinud Kernu Põhikooli tänu meie direktorile Marek Männikule
-      saan ma töötada nii armsas ja väikses Bullerbilikus koolis. Direktori pakub omalt poolt parimaid võimalusi enesetäienduseks, märgates ka väikseid asju, mille läbi arenen ma tohutult saamaks veel paremaks õpetajaks, kui praegu olen. Tänasel
-      päeval võin ma julgelt väita, et olen taas leidnud selle õige kooli ja keskkonna, kuhu pühenduda ja anda enda panus. Olen väga tänulik, et kogu meie koolipere, lapsevanemad ja mu enda pere toetavad mind sellel õpetajaks olemise teekonnal.
-
-    </p>
-    <footer>
-      <br />
-      <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Tagasi lehekülje algusesse</a>
-    </footer>
-  </div>
-
-
+  </main>
 </body>
-
 </html>

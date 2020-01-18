@@ -1,315 +1,335 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <style>
+    main {
+      padding: 0;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      text-align: center;
+      z-index: 1;
+    }
     .sisu {
       line-height: 30px;
       padding-left: 260px;
       padding-right: 260px;
       text-align: justify;
     }
-
     .galerii {
       text-align: center;
       width: 600px;
       margin: auto;
     }
-
     footer {
       text-align: center;
     }
   </style>
   <title>Kutseportfell</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
-
 <body>
-  <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Klassiõpetaja Nele Maide</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppija toetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/opetamine.html">Õpetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/arendusJaLoometegevus.html">Arendus-, loome- ja teadustegevus</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/eneseReflektsioon.html">Refleksioon ja professionaalne enesearendamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/koostoo.html">Koostöö ja juhendamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/HEV.html">Hariduslike erivajadustega õppija toetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/labivadKompetentsid.html">Läbivad kompetentsid</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV <i class='far fa-file-word' style='font-size:1rem;color:orange'></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte <i
-              class='far fa-folder' style='font-size:1rem;color:orange'></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle <i class='far fa-folder'
-              style='font-size:1rem;color:orange'></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii <i class='far fa-image' style='font-size:1rem;color:orange'></i>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-  <div class="sisu">
-    <p>
-      <h2>1. Õpi ja õpetamistegevuse kavandamine</h2>
-      <h3>Õppijate taseme kaardistamine</h3>
-
-      Oma esimesel klassiõpetaja-aastal olen õpetajaks 1. klassi ja 3.klassi liitklassi õpilastele, kus õpib 6 õpilast. Üks õpilane on käitumisraskustega, kolm õpilast kõneerivajadustega ning kaks andekat last. Klassiõpetajana töötades on valdav
-      enamus õpilastest meie klassis erivajadustega. Minu töö eripäraks on erivajadustega õpilaste õpetamine ning nende arengu igakülgne toetamine. Esimese kui ka kolmanda klassi õpilaste seas esineb suuresti lugemis ja kirjutamis raskusi. Minu
-      ülesandeks klassiõpetajana on just nende oskuste arendamine, sest kõik ained on seotud eneseväljenduse, kirjutamise ja lugemisoskustega. Kõikides õppeainetes on vajalikuks esmaseks oskuseks lugemine, et mõista aine sisu, matemaatikas
-      tekstülesandeid, loodusõpetuses töö tekstidega nendest mõistmine. Inimeseõpetuses ja loodusõpetuses jälle vajalik oskuslik enseväljendus. Tunde planeerides pean ma arvestama kõikide õpilaste eripäradega. Õpetamisel arvestan õpilaste vanust,
-      varasemaid kogemusi, õpioskusi ja –motivatsiooni õppe-eesmärkide seadmisel. Tuginen õpetajana õpingute käigus õpitud ja omandatud põhiprintsiipide rakendamisele (lähtudes aktiivsuse, eakohasuse, individuaalsuse printsiipidest).<br />
-      Esimesel aastal tegin tasemekaardistusena oma 1.klassi õpilasele testi, mis selgitas välja õpilase oskused lugemisest, arvutamisest ning matemaatikast. Õpetajana oli see õige otsus, mis andis mulle selge pildi, millised on õpilase oskused ja
-      eelteadmised koolitee alguses. Antud testi põhjal tuli välja väga palju väärtusliku infot, mis aitas mul kaardistada edasist tööd 1. klassi õpilasega. Testi tulemusest lähtuvalt olin ma õpetajana silmitsi olukorraga, kus esimese klassi õpilane
-      ei tundnud tähti, puudus lugemisoskus ja arvutamine oli raske.<br / />
-      <a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/Minu%20loodu%20%C3%B5ppematerjalid/%C3%95ppijate%20taseme%20kaardistamine%20-%20k%C3%BCpsusetest.docx">lisa1, kooliküpsusese test<a /> <br / />
-        <a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/Minu%20loodu%20%C3%B5ppematerjalid/%C3%95ppijate%20taseme%20kaardistamine%20-%20uus%20%C3%B5petajakutse%20materjal%20anal%C3%BC%C3%BCs.docx">lisa2, testi tulemus<a />
-          <div class="galerii">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/100.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/200.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/300.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/400.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/600.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/700.jpg" class="d-block w-100" alt="...">
-                </div>
-
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+  <main>
+    <header>
+      <div class="navi">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <button class="navbar-toggler" data-toggle="collapse" data-target=".navbars">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbars" id="collapse_target1">
+            <ul class="navbar-nav mx-auto">
+              <a class="navbar-brand">
+                <span>Nele Maide õpetaja kutseportfoolio</span>
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppija toetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/opetamine.html">Õpetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/arendusJaLoometegevus.html">Arendus-, loome- ja teadustegevus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/eneseReflektsioon.html">Refleksioon ja professionaalne enesearendamine</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <div class="collapse navbar-collapse navbars" id="collapse_target2">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/koostoo.html">Koostöö ja juhendamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/HEV.html">Hariduslike erivajadustega õppija toetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/labivadKompetentsid.html">Läbivad kompetentsid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV <i class='far fa-file-word' style='font-size:1rem;color:orange'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte <i
+                    class='far fa-folder' style='font-size:1rem;color:orange'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle <i class='far fa-folder'
+                    style='font-size:1rem;color:orange'></i>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii <i class='far fa-image' style='font-size:1rem;color:orange'></i>
                 </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="sisu">
+      <p>
+        <h2>1. Õpi ja õpetamistegevuse kavandamine</h2>
+        <h3>Õppijate taseme kaardistamine</h3>
+
+        Oma esimesel klassiõpetaja-aastal olen õpetajaks 1. klassi ja 3.klassi liitklassi õpilastele, kus õpib 6 õpilast. Üks õpilane on käitumisraskustega, kolm õpilast kõneerivajadustega ning kaks andekat last. Klassiõpetajana töötades on valdav
+        enamus õpilastest meie klassis erivajadustega. Minu töö eripäraks on erivajadustega õpilaste õpetamine ning nende arengu igakülgne toetamine. Esimese kui ka kolmanda klassi õpilaste seas esineb suuresti lugemis ja kirjutamis raskusi. Minu
+        ülesandeks klassiõpetajana on just nende oskuste arendamine, sest kõik ained on seotud eneseväljenduse, kirjutamise ja lugemisoskustega. Kõikides õppeainetes on vajalikuks esmaseks oskuseks lugemine, et mõista aine sisu, matemaatikas
+        tekstülesandeid, loodusõpetuses töö tekstidega nendest mõistmine. Inimeseõpetuses ja loodusõpetuses jälle vajalik oskuslik enseväljendus. Tunde planeerides pean ma arvestama kõikide õpilaste eripäradega. Õpetamisel arvestan õpilaste vanust,
+        varasemaid kogemusi, õpioskusi ja –motivatsiooni õppe-eesmärkide seadmisel. Tuginen õpetajana õpingute käigus õpitud ja omandatud põhiprintsiipide rakendamisele (lähtudes aktiivsuse, eakohasuse, individuaalsuse printsiipidest).<br />
+        Esimesel aastal tegin tasemekaardistusena oma 1.klassi õpilasele testi, mis selgitas välja õpilase oskused lugemisest, arvutamisest ning matemaatikast. Õpetajana oli see õige otsus, mis andis mulle selge pildi, millised on õpilase oskused ja
+        eelteadmised koolitee alguses. Antud testi põhjal tuli välja väga palju väärtusliku infot, mis aitas mul kaardistada edasist tööd 1. klassi õpilasega. Testi tulemusest lähtuvalt olin ma õpetajana silmitsi olukorraga, kus esimese klassi õpilane
+        ei tundnud tähti, puudus lugemisoskus ja arvutamine oli raske.<br / />
+        <a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/Minu%20loodu%20%C3%B5ppematerjalid/%C3%95ppijate%20taseme%20kaardistamine%20-%20k%C3%BCpsusetest.docx">lisa1, kooliküpsusese test<a /> <br / />
+          <a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/Minu%20loodu%20%C3%B5ppematerjalid/%C3%95ppijate%20taseme%20kaardistamine%20-%20uus%20%C3%B5petajakutse%20materjal%20anal%C3%BC%C3%BCs.docx">lisa2, testi tulemus<a />
+            <div class="galerii">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/100.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/200.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/300.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/400.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/700.jpg" class="d-block w-100" alt="...">
+                  </div>
+
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <br /> <br / />
-          3. klassi puhul keskendusin möödunud õppeaasta faktiliste teadmiste väljaselgitamisele. Kooliaasta alguses teen õpilastele diagnostilise etteütluse ja lugemistesti (tehniline lugemisoskus, loetu mõistmine) mida hiljem analüüsin. Need
-          ütlevad
-          meile palju: 1) millised on õpilase hetke oskused ja mis jääb lähimasse arengutsooni; 2) millised oskused vajavad arendamist; 3) milline on olnud õpilase areng ajavahemikus sügis-talv. Samuti talitan jutustamisoskuse ja matemaatiliste
-          pädevuste
-          arengu hindamisel. Uute õpilaste kohta annab vajalikku lisainfot ka õpilase toimikuga tutvumine, kuid selleks, et täpsemalt õpilase võimeid hinnata, on vaja just eelpool nimetatud tegevusi täita ning võrrelda eelmisega. Uute õpilaste puhu
-          rakendan veel vestlust õpilasega saamaks temaga usaldusliku kontakti. Tavaliselt palusin neil esimeses või kolmandas tunnis tulla minu juurde. Ülejäänud klass tegi iseseisvat tööd ajal, kui teine õpilane vestles minuga, kus tutvustasime end
-          vastastikku ning andsime teada, mida peame teineteise puhul teadma (siin olid õpilased mitmel korral avameelsed ja sain väga kasulikku infot) ning vestlesime natukene teemadel, millised õppeained on nende jaoks keerulisemad. Üldküsimuste
-          abil
-          sain ettekujutuse suhtumisest õpimisse kui ka üldiste teadmiste ja oskuste ülevaate. Vajalikku lisainfot ka õpilase toimikuga tutvumine, kuid selleks, et täpsemalt õpilase võimeid hinnata, on vaja just eelpool nimetatud tegevusi täita ning
-          võrrelda eelmisega.<br />
-          Õpilaste poolt vestluses väljatoodud oskused kajastusid kõik ka õpetaja poolsel testimisel.<br />
+            <br /> <br / />
+            3. klassi puhul keskendusin möödunud õppeaasta faktiliste teadmiste väljaselgitamisele. Kooliaasta alguses teen õpilastele diagnostilise etteütluse ja lugemistesti (tehniline lugemisoskus, loetu mõistmine) mida hiljem analüüsin. Need
+            ütlevad
+            meile palju: 1) millised on õpilase hetke oskused ja mis jääb lähimasse arengutsooni; 2) millised oskused vajavad arendamist; 3) milline on olnud õpilase areng ajavahemikus sügis-talv. Samuti talitan jutustamisoskuse ja matemaatiliste
+            pädevuste
+            arengu hindamisel. Uute õpilaste kohta annab vajalikku lisainfot ka õpilase toimikuga tutvumine, kuid selleks, et täpsemalt õpilase võimeid hinnata, on vaja just eelpool nimetatud tegevusi täita ning võrrelda eelmisega. Uute õpilaste puhu
+            rakendan veel vestlust õpilasega saamaks temaga usaldusliku kontakti. Tavaliselt palusin neil esimeses või kolmandas tunnis tulla minu juurde. Ülejäänud klass tegi iseseisvat tööd ajal, kui teine õpilane vestles minuga, kus tutvustasime end
+            vastastikku ning andsime teada, mida peame teineteise puhul teadma (siin olid õpilased mitmel korral avameelsed ja sain väga kasulikku infot) ning vestlesime natukene teemadel, millised õppeained on nende jaoks keerulisemad. Üldküsimuste
+            abil
+            sain ettekujutuse suhtumisest õpimisse kui ka üldiste teadmiste ja oskuste ülevaate. Vajalikku lisainfot ka õpilase toimikuga tutvumine, kuid selleks, et täpsemalt õpilase võimeid hinnata, on vaja just eelpool nimetatud tegevusi täita ning
+            võrrelda eelmisega.<br />
+            Õpilaste poolt vestluses väljatoodud oskused kajastusid kõik ka õpetaja poolsel testimisel.<br />
 
-          Infot uute õpilase kohta kogun ka tunni jälgimisel. Sageli tulevad õpilaste erisused välja just üleklassilise töö käigus, kus õpilasel võib olla näiteks raskusi püsida ülejäänud klassiga samas tempos. Sellisel juhul saan õpetajana teda
-          individuaalselt rohkem abistada ja juhendada või tema töömahtu vähendada. Näiteks kui õpilane on väga aeglane kirjutaja, siis kirjatehnilisi harjutusi tehes võtan seda arvesse ja jätan talle vähem kirjutada. Kui tean, et õpilasel on raskusi
-          jälgida klassis toimuvat, jälgin, et õpilane teeks ülejäänud klassiga tööd kaasa (näiteks juhin eraldi tema tähelepanu uuele ülesandele, loen lugemispala valjuhäälselt temaga kaasa, näitan järge).<br />
-          Erisusi märgates uurin ka teistelt õpetajatelt, mida nemad selle õpilase osas märganud on ning kogun nende poolset infot. Kui raskused mõjutavad õppetööd oluliselt, võtan koheselt ühendust lapsevanematega e-kooli või telefoni kaudu ning
-          informeerin neid sellest. Vajadusel lepime kokku kohtumise, et jõuda üheskoos võimaliku parema lahenduseni, kuidas nad saavad oma last kodustes töödes toetada. Raskustest informeerin ka meie kooli HEV- kordinaatorit, logopeedi ja
-          direktorit.
-          Vajaduse tekkimisel selgitame koos HEV- kordinaatoriga lapsevanemale täiendavate uuringute vajadust ning suuname ja juhendame lapsevanemat selles protsessis, et õpilast maksimaalselt toetada. Uuringule minevale õpilasele kirjutan
-          klassijuhatajana alati kaasa ka õpilase iseloomustuse. Iseloomustuses kirjeldan õpilase tugevusi ja raskusi (nii akadeemilisest kui emotsionaalsest ja sotsiaalsest aspektist), mille tõttu täiendavaid uuringuid vajalikuks pean.<br />
-          Uue õppeaasta alguses võtan ma esimesed paar tundi taaskordseks sisseelamiseks, räägime suvest ning seame üldised eesmärgid nii õppeaastaks kui ka uueks kuuks. Tutvustan 1. klassi ja 3.klassi õpilastele suuri teemasid erinevates ainetes
-          ning
-          lasen õpilastel selgitada, millised mõtted neil nende teemadega tulevad. Tihti saan just selle tegevusega väga palju eelinfot klassi üldise taseme ja huvide kohta erinevatest teemadest, mis hilisemas planeeringufaasis aitab mul teemasid
-          valida
-          ja vormi valida nii, et õpilaste õpimotivatsioon püsib ning on igati toetatud.<br />
-          Ka edaspidi tulevikus arvatavasti kasutaksin sarnast metoodikat, mida olen siiani kooliaasta alguses rakendanud.<br />
-          Minu, kui alustava õpetaja õpetajakogemuse saamise eeliseks on väike kool (Kernu Põhikool, kus õpib hetkel 35 õpilast), mis võimaldab meil kollektiivina teha koostööd õpilaste (hariduslike) erivajaduste märkamisel ja kollektiivsel
-          toetamisel,
-          seega enamasti kui klassi tuleb mõni lisatuge vajav õpilane, siis on sellest eelnevalt teadlikud kõik algklasside klassijuhatajad. Õpetaja töös minu suureks plussiks tulevad eelnevad eripedagoogilised oskused ja teadmised, kuidas saan
-          õpilast
-          õppimisel aidata ning millega pean arvestama. Kuna olen õpetajana alustav õpetaja siis olen kutsunud oma tunde vaatlema ja oma õpetamisviisi parendama meie kooli õpetaja, kes on töötanud õpetajana juba aastaid, et läbi kogemuste vahendamise
-          saada veel paremaks õpetajaks. Tema perioodilised külaskäigud on aidanud mul märgata liitklassis õpetamise kitsaskohti, kuidas nendega paremini toime tulla.<br />
-
+            Infot uute õpilase kohta kogun ka tunni jälgimisel. Sageli tulevad õpilaste erisused välja just üleklassilise töö käigus, kus õpilasel võib olla näiteks raskusi püsida ülejäänud klassiga samas tempos. Sellisel juhul saan õpetajana teda
+            individuaalselt rohkem abistada ja juhendada või tema töömahtu vähendada. Näiteks kui õpilane on väga aeglane kirjutaja, siis kirjatehnilisi harjutusi tehes võtan seda arvesse ja jätan talle vähem kirjutada. Kui tean, et õpilasel on raskusi
+            jälgida klassis toimuvat, jälgin, et õpilane teeks ülejäänud klassiga tööd kaasa (näiteks juhin eraldi tema tähelepanu uuele ülesandele, loen lugemispala valjuhäälselt temaga kaasa, näitan järge).<br />
+            Erisusi märgates uurin ka teistelt õpetajatelt, mida nemad selle õpilase osas märganud on ning kogun nende poolset infot. Kui raskused mõjutavad õppetööd oluliselt, võtan koheselt ühendust lapsevanematega e-kooli või telefoni kaudu ning
+            informeerin neid sellest. Vajadusel lepime kokku kohtumise, et jõuda üheskoos võimaliku parema lahenduseni, kuidas nad saavad oma last kodustes töödes toetada. Raskustest informeerin ka meie kooli HEV- kordinaatorit, logopeedi ja
+            direktorit.
+            Vajaduse tekkimisel selgitame koos HEV- kordinaatoriga lapsevanemale täiendavate uuringute vajadust ning suuname ja juhendame lapsevanemat selles protsessis, et õpilast maksimaalselt toetada. Uuringule minevale õpilasele kirjutan
+            klassijuhatajana alati kaasa ka õpilase iseloomustuse. Iseloomustuses kirjeldan õpilase tugevusi ja raskusi (nii akadeemilisest kui emotsionaalsest ja sotsiaalsest aspektist), mille tõttu täiendavaid uuringuid vajalikuks pean.<br />
+            Uue õppeaasta alguses võtan ma esimesed paar tundi taaskordseks sisseelamiseks, räägime suvest ning seame üldised eesmärgid nii õppeaastaks kui ka uueks kuuks. Tutvustan 1. klassi ja 3.klassi õpilastele suuri teemasid erinevates ainetes
+            ning
+            lasen õpilastel selgitada, millised mõtted neil nende teemadega tulevad. Tihti saan just selle tegevusega väga palju eelinfot klassi üldise taseme ja huvide kohta erinevatest teemadest, mis hilisemas planeeringufaasis aitab mul teemasid
+            valida
+            ja vormi valida nii, et õpilaste õpimotivatsioon püsib ning on igati toetatud.<br />
+            Ka edaspidi tulevikus arvatavasti kasutaksin sarnast metoodikat, mida olen siiani kooliaasta alguses rakendanud.<br />
+            Minu, kui alustava õpetaja õpetajakogemuse saamise eeliseks on väike kool (Kernu Põhikool, kus õpib hetkel 35 õpilast), mis võimaldab meil kollektiivina teha koostööd õpilaste (hariduslike) erivajaduste märkamisel ja kollektiivsel
+            toetamisel,
+            seega enamasti kui klassi tuleb mõni lisatuge vajav õpilane, siis on sellest eelnevalt teadlikud kõik algklasside klassijuhatajad. Õpetaja töös minu suureks plussiks tulevad eelnevad eripedagoogilised oskused ja teadmised, kuidas saan
+            õpilast
+            õppimisel aidata ning millega pean arvestama. Kuna olen õpetajana alustav õpetaja siis olen kutsunud oma tunde vaatlema ja oma õpetamisviisi parendama meie kooli õpetaja, kes on töötanud õpetajana juba aastaid, et läbi kogemuste vahendamise
+            saada veel paremaks õpetajaks. Tema perioodilised külaskäigud on aidanud mul märgata liitklassis õpetamise kitsaskohti, kuidas nendega paremini toime tulla.<br />
 
 
 
-          <h2>2.Õppevara valimine</h2>
 
-          Õpetamisel kohandan õpivara, arvestades õppijate vajadusi. Kohandan õpivara vastavalt õppijate vajadustele, näiteks HEV – õpilastele teostan lihtsama sisuga ülesanded kui tavaklassile. Peamiselt õppevara valimisel lähtun Mauruse kirjastuse  õpikutest ning nende poolt koostatud töökavadest,mida täiendan erinevate aktiivõppe tegevuste või mängudega. Minu töökavad on koostatud Kernu Põhikooli kooli- ja ainekavade põhjal. Töökavad aitavad mul püsida teemas ja hoida töö tempot, et aasta lõpuks jõuaksin vajalikud teemad läbi võetud.ning valida sobivad õppevarasid. Tundide ettevalmistal arvestan õpilaste olemasolevate teadmistega, nende individuaalsete eripäradega ning lähtun suuresti Mauruse kirjastuste õpikutest.<br />
-          Näiteks<br/>
-          Esimese klassi õpetamisel kasutasin peamiselt Mauruse õpikuid. Mulle meeldis nende ülesehitus, kus peatükk on jagatud neljaks enamvähem võrdseks alapeatükiks, mis võimaldab erinevate õpilaste ja ülesannete vahel teksti liigendada. Mauruse aabitsa üheks miinuseks pean ma paraku lugemiku keerukaid tekste, mis muudab lugemise raskeks HEV – lapsele. IKT - vahendite kasutamisel lähtun ma alati õppija tasemest.
-          HEV-õpilastele koostan eraldi tunnikava ning arvestan sellega õpetamise käigus. Oma töös analüüsin enda loodud õppevahendeid, teostan pidevalt uuendusi , et rikastada ning täiendada õppevahendeid. HEV- õpilaste puhul lähtun nende vajadusest ning rajaleidja soovitustest. Õpilastele koostan eraldi töölehti, kuid üha enam rakendan õpetamises digivahendeid. Interneti avaruste rikkalik pildivara, jutukesed, laulud ja töölehed muudavad õppimise sisukamaks. Tänu erinevatele IKT võimalustele leiab internetist erinevaid Lotte temaatilisi õppematerjale, mille tulemusena on õpetajal võimalus kohandada õpimaterjali ka HEV – lapse õpetamiseks. Peatüki või tööraamatutes olevad küsimused on tihti erineva tasemega, mis võimaldavad teemale läheneda erinevatest lähtepunktidest. <br/>
+            <h2>2.Õppevara valimine</h2>
 
-          Näitena tooksin siinkohal  IKT vahendite kasutamise Eesti keele tunnist ühe luuletuse näitel “ Midagi head”  Leelo Tunglal<br/>
-          <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/tihane.png" width="743 px" >
-          http://xn--epik-0qa.ee/lotte/materjalid/. Projektoriga saan kuvada antud raamatu lehe suurele ekraanile. Üheskoos õpilasega loeme koos luuletust, mille salvestame telefoni, et ettekannet hiljem kuulata. Antud harjutust saame korrata mitmeid kordi ning hiljem võrrelda helisalvestisi. Milliseid muutusi märkab õpilane ja milliseid muudatusi tähendab õpetaja. See on väga hea võimalus tunnustada õpilase positiivseid edusamme luuletuse lugemisel. Antud õpetamisviis toob lapsele palju rõõmu, sest osaleb ise kuuldemängu teostamise juures. Järgnevaks kuulame sinitihase ja rasvatihase laulu läbi audio salvestuse <a href="https://www.loodusheli.ee/ET/loomaliigid/linnud/taxonid=316&speciesid=570">sinitihane</a> ja
-          <a href="https://www.loodusheli.ee/ET/loomaliigid/linnud/taxonid=316&speciesid=417">rasvatihane</a>. Hiljem lasen õpilasel kasutada tahvlis google otsingut ning palun kirjutada ärakirjas otsingusõnu sinitihane  ja rasvatihatihase kohta. Samal hetkel arendame häälikute häälimise tehnikaid, et veebiotsinguid huvitavamaks mõelda. Oluline on muuta õppimine kõikide õpilaste jaoks sisukamaks kasutan ma ära erinevaid IKT- võimalusi, mis õpetamiselt aitab kaasa õpilase huvi tekitamisel ning suurendab õpetajaõpivara. Koduseks ülesandeks jäi lindude vaatlus(pildistamine või filmine), mida tuleb hiljem klassi ees presenteerida.<br />
-          Õppevara üheks puuduseks pean, et Mauruse kirjastuse 1 klassi ja 3.klassi õpikuid on  väga vähe saadaval erinevates keskkondades, kus on olemas ka teksti lugev eestikeelne kõnerobot, mis võimaldaks sama tekstiga töötada õpilastel, kellel on düsleksia või ei oska ise veel lugeda. Alternatiivina oleme nt  kuulanud kuuldemänge <a href="https://vikerraadio.err.ee/812294/ohtujutt-lastele-lastejutt-muinasjutt-hallist-hiirekesest-kes-otsis-endale-sopra-malle-parn ">Vikerraadio veebilehelt</a>  või <a href="https://www.youtube.com/watch?v=bqI4c0LJOiE&list=PL0deLxzx_rkiN0NTWWwsinlvehVMVgT0t">youtube-i keskonnast</a> .<br/>
+            Õpetamisel kohandan õpivara, arvestades õppijate vajadusi. Kohandan õpivara vastavalt õppijate vajadustele, näiteks HEV – õpilastele teostan lihtsama sisuga ülesanded kui tavaklassile. Peamiselt õppevara valimisel lähtun Mauruse kirjastuse
+            õpikutest ning nende poolt koostatud töökavadest,mida täiendan erinevate aktiivõppe tegevuste või mängudega. Minu töökavad on koostatud Kernu Põhikooli kooli- ja ainekavade põhjal. Töökavad aitavad mul püsida teemas ja hoida töö tempot, et
+            aasta
+            lõpuks jõuaksin vajalikud teemad läbi võetud.ning valida sobivad õppevarasid. Tundide ettevalmistal arvestan õpilaste olemasolevate teadmistega, nende individuaalsete eripäradega ning lähtun suuresti Mauruse kirjastuste õpikutest.<br />
+            Näiteks<br />
+            Esimese klassi õpetamisel kasutasin peamiselt Mauruse õpikuid. Mulle meeldis nende ülesehitus, kus peatükk on jagatud neljaks enamvähem võrdseks alapeatükiks, mis võimaldab erinevate õpilaste ja ülesannete vahel teksti liigendada. Mauruse
+            aabitsa üheks miinuseks pean ma paraku lugemiku keerukaid tekste, mis muudab lugemise raskeks HEV – lapsele. IKT - vahendite kasutamisel lähtun ma alati õppija tasemest.
+            HEV-õpilastele koostan eraldi tunnikava ning arvestan sellega õpetamise käigus. Oma töös analüüsin enda loodud õppevahendeid, teostan pidevalt uuendusi , et rikastada ning täiendada õppevahendeid. HEV- õpilaste puhul lähtun nende vajadusest
+            ning rajaleidja soovitustest. Õpilastele koostan eraldi töölehti, kuid üha enam rakendan õpetamises digivahendeid. Interneti avaruste rikkalik pildivara, jutukesed, laulud ja töölehed muudavad õppimise sisukamaks. Tänu erinevatele IKT
+            võimalustele
+            leiab internetist erinevaid Lotte temaatilisi õppematerjale, mille tulemusena on õpetajal võimalus kohandada õpimaterjali ka HEV – lapse õpetamiseks. Peatüki või tööraamatutes olevad küsimused on tihti erineva tasemega, mis võimaldavad
+            teemale läheneda erinevatest lähtepunktidest. <br />
+            Näitena tooksin siinkohal IKT vahendite kasutamise Eesti keele tunnist ühe luuletuse näitel “ Midagi head” Leelo Tunglal<br />
+            <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/tihane.png" width="743 px">
+            http://xn--epik-0qa.ee/lotte/materjalid/. Projektoriga saan kuvada antud raamatu lehe suurele ekraanile. Üheskoos õpilasega loeme koos luuletust, mille salvestame telefoni, et ettekannet hiljem kuulata. Antud harjutust saame korrata mitmeid
+            kordi ning hiljem võrrelda helisalvestisi. Milliseid muutusi märkab õpilane ja milliseid muudatusi tähendab õpetaja. See on väga hea võimalus tunnustada õpilase positiivseid edusamme luuletuse lugemisel. Antud õpetamisviis toob lapsele
+            palju rõõmu,
+            sest osaleb ise kuuldemängu teostamise juures. Järgnevaks kuulame sinitihase ja rasvatihase laulu läbi audio salvestuse <a href="https://www.loodusheli.ee/ET/loomaliigid/linnud/taxonid=316&speciesid=570">sinitihane</a> ja
+            <a href="https://www.loodusheli.ee/ET/loomaliigid/linnud/taxonid=316&speciesid=417">rasvatihane</a>. Hiljem lasen õpilasel kasutada tahvlis google otsingut ning palun kirjutada ärakirjas otsingusõnu sinitihane ja rasvatihatihase kohta.
+            Samal hetkel arendame häälikute häälimise tehnikaid, et veebiotsinguid huvitavamaks mõelda. Oluline on muuta õppimine kõikide õpilaste jaoks sisukamaks kasutan ma ära erinevaid IKT- võimalusi, mis õpetamiselt aitab kaasa õpilase huvi
+            tekitamisel ning
+            suurendab õpetajaõpivara. Koduseks ülesandeks jäi lindude vaatlus(pildistamine või filmine), mida tuleb hiljem klassi ees presenteerida.<br />
+            Õppevara üheks puuduseks pean, et Mauruse kirjastuse 1 klassi ja 3.klassi õpikuid on väga vähe saadaval erinevates keskkondades, kus on olemas ka teksti lugev eestikeelne kõnerobot, mis võimaldaks sama tekstiga töötada õpilastel, kellel on
+            düsleksia või ei oska ise veel lugeda. Alternatiivina oleme nt kuulanud kuuldemänge <a href="https://vikerraadio.err.ee/812294/ohtujutt-lastele-lastejutt-muinasjutt-hallist-hiirekesest-kes-otsis-endale-sopra-malle-parn ">Vikerraadio
+              veebilehelt</a> või <a href="https://www.youtube.com/watch?v=bqI4c0LJOiE&list=PL0deLxzx_rkiN0NTWWwsinlvehVMVgT0t">youtube-i keskonnast</a> .<br />
             Lisaks annaks e – õpikud ja tööraamatud võimaluse hoiustada õpikuid koolis ning vajadusel töötada sama materjaliga kodus või arvutiklassis. Veebipõhiste õppematerjalide osas olen viimasel ajal märganud, et paljud keskkonnad, programmid
-          on muutunud tasuliseks, mis otseselt piirab erinevate õppevarade kasutamist.<br/><br/>
-          <h2>Töökavade koostamine</h2>
-<br/>
-
-
-          Kernu Põhikooli õpetajatelt aasta töökava esitamist ei nõuta, seepärast koostasin endale alati tunniipõhised või veerandipõhised töökavad, kus planeerisin ära tunnitegevused ja teemad ning tegevused nende raames. Tegemist on minu enda töödokumendiga, kuid mida jagan meelsasti kõigi kolleegidega. Samas kõik teavad, et tegemist on lihtsalt tööversioonidega ning tundide läbiviimisel olen alati paindlik. Töökavasid jagan õpetajatega meelsasti e- keskkonnas.<br/>
-          Töökavadest lähtuvalt jagan teemasid ühe kolleegiga, kes õpetab individuaalselt ühte 3. klassi õpilast. Nädala alguses jagame üksteisega nädala eesmärke, tegevuskavasid ideid, materjale ning vahel vaatame üheskoos üle töökavad jagades teineteisele soovitusi.  Paljudel juhtudel kui põhiteemad kattuvad siis jagame e- maili teel infot või helistame üksteisele. <br/>
-          Oma esimesel õpetaja-aastal koostasin ma põhjalikud tunnikavad, kuid II poolaastal jäi nende tegemine tahaplaanile. Õpetajana sobib mulle kõige enam päevast ja nädalast lähtuvalt kirjutada ja mõelda tööplaane. Tunnikavade puhul lähtusin peamiselt viieastmelisest planeerimisest (sissejuhatus ja eesmärgistamine - varasemate teadmiste ja oskuste kaardistamine - eelneva ja uue teoreetiline sidumine - praktline tegevus - analüüs ja kokkuvõte). <br/>
-          Tulenevalt eripedagoogi erialast mõtlen tundides alati läbi ka rohkem tähelepanu vajavate õpilaste kaasamise. Minu jaoks on oluline, et kõik õpilased saavutaksid head tulemused ,õpitu kinnistuks ning mis peamine oskaksid seda ka rakendada. Mul on klassis kaks õpilast, kellel on raskusi lugemisega. Vahel lihtsustan ma ise nende jaoks
-          Õpikutes olevaid tekste, kuid see on alati meeletu töö..Küll aga kasutasin palju meetodit, kus  õpilane loeb lõigu,  võtab ühe lausega loetu kokku..Klassis tegelen ma rohkem  õpilastega, kes vajasid rohkem abi ning  alati seletan ülesande veel eraldi lahti. Soovin, et iga õpilane tunneks ennast tunnis hästi ning tunnetaks eduelamust ja tõuseks õpimotivatsioon.Rühmatlöö puhul arvestan õpilaste teadmiste ja oskustega. Jälgin, et rühma ei satuks kokku kaks keeleliselt nõrgemat last. Tunnitöös jälgin ka seda, et tund oleks võimalikult  vaheldusrikas, kuhu vahele mahutan ka erinevaid  liikumisega seostuvaid ülesandeid. <br/>
-          Tunnikavade koostamisel lähtun ma ainealastest üldpädevustest, siis liigun konkreetsetesse õpiväljunditesse püstitades kaugemad ja lähemad eesmärgid. <br/>
-          Oma töös jälgin pidevalt individuaalset lähenemist, et saavutada õppetöös maksimaalne tulemus. <br/>
-
-          Arvestan ja rakendan õppe planeerimisel ainetevahelise lõimingu põhimõtteid.
-
-          Eesti keele, matemaatika, tööõpetuse õppe planeerimisel on oluliseks osaks ainete lõimimine loodusõpetuse, kunsti, kokanduse, muusika ja kirjandusega. <br / />Tähtsaks on luua ühendus õpitu ja reaalse elu vahel.<br />Oluline on õpetada
-          lastele
-          mitte ainult akadeemilisi tarkusi vaid ka nende rakendamist päris elus.<br />
-          Näited integreeritud tegevustest:<br />
-          <h4>Matemaatika</h4>Korrutamine arvuga 7 lk 25(Mauruse Matemaatika õpik)<br />
-          Ühel ilusal päeval õpetas õpetaja Villem tööõpetuses, kuidas teha tuuleveskit. Alguses tegid kõik tavalise tuuleveskit. Hiljem prooviti teha keerulisemaid veskeid. Vikerkaarelise veski jaoks oli vaja seitset värvi tiibasid. Kahjuks oli
-          rohelist
-          värvi materjali vähem kui vaja ning seepärast tuli mõned tuuleveskid teha kuuevärvilisena.<br />
-          Mitu tiiba tuleb kokku teha, et saaks 6 vikerkaare värvilise tuuleveski?<br />
-          7 x 6 = 42<br />
-          Mitu tiiba tuleb teha, et saaks 7 vikerkaarevärvilist tuuleveskit? <br />
-          7 x 9 = 49<br />
-          Mitu tiiba tuleb teha, et saaks 3 vikerkaarevärvilist ja 2 tavalist tuuleveskit? <br />
-          21 + 7 x 2 =35<br />
-          <br />
-          <h4>Eesti keel</h4>Teksti lugemine ja selle mõistmine. Teksti lugemisel tuleb osata teha tähelepanekuid ridade vahelt.Vikerkaarest lisa teksti leidmine internetist. <br />
-          • <a href="https://www.looduskalender.ee/n/node/2718">Looduskalender</a><br />
-          Rühmatööna vikerkaarest luuletuse kirjutamine ning selle esitlemine. <br />
-
-          <br />
-          <h4>Inglise keel ja muusika</h4>
-
-          <iframe width="420" height="315" src="https://www.youtube.com/embed/SLZcWGQQsmg">
-          </iframe><br />
-          <br />
-          <h4>Kunstiõpetus</h4>
-          • Õpilased kasutavad IKT vahendit otsides infot vikerkaarevärvide ja nimetuste kohta. <br />Siis moodustati värvipliiatsitest vikerkaar. Seal tuli tõlgendada ning seoseid luua, mida tähendab seitse värvi tiibasid. <br />
-          • Õpilased joonistasid vikerkaare ning otsisid internetist lisaks vikerkaare teemalisi meisterdusi(siin tuli kasuks inglise keele kasutus). <br />
-          • Leidsime vahva idee siduda see kunstiga - värvipaberist salli loomine koos narmastega. <br />
-          <br />
-          <h4>Tööõpetus</h4>
-          Tavalise tuuleveski meisterdamine jälgides juhendit matemaatika õpikust lk 25. <br />
-          • Vali endale sobiv vikerkaares esinev värv. <br />
-          • Tee ruudukujulise paberi diagonaalile sisselõiked nii nagu on joonisel näidatud. <br />
-          • Keera sisselõike üks serv õrnalt keskele. Jätka nii nagu joonisel on näidatud. <br />
-          • Kinnita sissekeeratud tipud pealt teibiga. <br />
-          Füüsika – Tuuleveski pöörlemisel tekkiv võimalik takistus, mis pärsib tuuleveski liikumist. <br />
-          • Kinnita veski naelaga varre külge. Selleks, et tiivad paremini pöörleksid, võid naelale tiiviku alla ja peale <br />
-          • Lisada helmed. <br />
-          Järgmisel vahetunnil läksid kõik õpilased õue proovima, kui hästi veskite tiivad pöörlevad ning tuli ka vaadelda kas esineb takistusi tuuleveski pöörlemisel. <br />
-
-          Loodusõpetus<br />
-          • Aknast vikerkaare värvide vaatlus porilombilt. <br />
-          • Vee,õli ja päikese koosmõju. Hiljem vestlus, mida märgati porilombil? <br />
-          • Vikerkaare värvide pildistamine<br />
-          <div class="galerii">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/1.jpg" class="d-block w-100" alt="...">
+            on muutunud tasuliseks, mis otseselt piirab erinevate õppevarade kasutamist.<br /><br />
+            <h2>Töökavade koostamine</h2>
+            <br />
+            Kernu Põhikooli õpetajatelt aasta töökava esitamist ei nõuta, seepärast koostasin endale alati tunniipõhised või veerandipõhised töökavad, kus planeerisin ära tunnitegevused ja teemad ning tegevused nende raames. Tegemist on minu enda
+            töödokumendiga, kuid mida jagan meelsasti kõigi kolleegidega. Samas kõik teavad, et tegemist on lihtsalt tööversioonidega ning tundide läbiviimisel olen alati paindlik. Töökavasid jagan õpetajatega meelsasti e- keskkonnas.<br />
+            Töökavadest lähtuvalt jagan teemasid ühe kolleegiga, kes õpetab individuaalselt ühte 3. klassi õpilast. Nädala alguses jagame üksteisega nädala eesmärke, tegevuskavasid ideid, materjale ning vahel vaatame üheskoos üle töökavad jagades
+            teineteisele soovitusi. Paljudel juhtudel kui põhiteemad kattuvad siis jagame e- maili teel infot või helistame üksteisele. <br />
+            Oma esimesel õpetaja-aastal koostasin ma põhjalikud tunnikavad, kuid II poolaastal jäi nende tegemine tahaplaanile. Õpetajana sobib mulle kõige enam päevast ja nädalast lähtuvalt kirjutada ja mõelda tööplaane. Tunnikavade puhul lähtusin
+            peamiselt viieastmelisest planeerimisest (sissejuhatus ja eesmärgistamine - varasemate teadmiste ja oskuste kaardistamine - eelneva ja uue teoreetiline sidumine - praktline tegevus - analüüs ja kokkuvõte). <br />
+            Tulenevalt eripedagoogi erialast mõtlen tundides alati läbi ka rohkem tähelepanu vajavate õpilaste kaasamise. Minu jaoks on oluline, et kõik õpilased saavutaksid head tulemused ,õpitu kinnistuks ning mis peamine oskaksid seda ka rakendada.
+            Mul on klassis kaks õpilast, kellel on raskusi lugemisega. Vahel lihtsustan ma ise nende jaoks
+            Õpikutes olevaid tekste, kuid see on alati meeletu töö..Küll aga kasutasin palju meetodit, kus õpilane loeb lõigu, võtab ühe lausega loetu kokku..Klassis tegelen ma rohkem õpilastega, kes vajasid rohkem abi ning alati seletan ülesande veel
+            eraldi lahti. Soovin, et iga õpilane tunneks ennast tunnis hästi ning tunnetaks eduelamust ja tõuseks õpimotivatsioon.Rühmatlöö puhul arvestan õpilaste teadmiste ja oskustega. Jälgin, et rühma ei satuks kokku kaks keeleliselt nõrgemat last.
+            Tunnitöös jälgin ka seda, et tund oleks võimalikult vaheldusrikas, kuhu vahele mahutan ka erinevaid liikumisega seostuvaid ülesandeid. <br />
+            Tunnikavade koostamisel lähtun ma ainealastest üldpädevustest, siis liigun konkreetsetesse õpiväljunditesse püstitades kaugemad ja lähemad eesmärgid. <br />
+            Oma töös jälgin pidevalt individuaalset lähenemist, et saavutada õppetöös maksimaalne tulemus. <br />
+            Arvestan ja rakendan õppe planeerimisel ainetevahelise lõimingu põhimõtteid.
+            Eesti keele, matemaatika, tööõpetuse õppe planeerimisel on oluliseks osaks ainete lõimimine loodusõpetuse, kunsti, kokanduse, muusika ja kirjandusega. <br / />Tähtsaks on luua ühendus õpitu ja reaalse elu vahel.<br />Oluline on õpetada
+            lastele
+            mitte ainult akadeemilisi tarkusi vaid ka nende rakendamist päris elus.<br />
+            Näited integreeritud tegevustest:<br />
+            <h4>Matemaatika</h4>Korrutamine arvuga 7 lk 25(Mauruse Matemaatika õpik)<br />
+            Ühel ilusal päeval õpetas õpetaja Villem tööõpetuses, kuidas teha tuuleveskit. Alguses tegid kõik tavalise tuuleveskit. Hiljem prooviti teha keerulisemaid veskeid. Vikerkaarelise veski jaoks oli vaja seitset värvi tiibasid. Kahjuks oli
+            rohelist
+            värvi materjali vähem kui vaja ning seepärast tuli mõned tuuleveskid teha kuuevärvilisena.<br />
+            Mitu tiiba tuleb kokku teha, et saaks 6 vikerkaare värvilise tuuleveski?<br />
+            7 x 6 = 42<br />
+            Mitu tiiba tuleb teha, et saaks 7 vikerkaarevärvilist tuuleveskit? <br />
+            7 x 9 = 49<br />
+            Mitu tiiba tuleb teha, et saaks 3 vikerkaarevärvilist ja 2 tavalist tuuleveskit? <br />
+            21 + 7 x 2 =35<br />
+            <br />
+            <h4>Eesti keel</h4>Teksti lugemine ja selle mõistmine. Teksti lugemisel tuleb osata teha tähelepanekuid ridade vahelt.Vikerkaarest lisa teksti leidmine internetist. <br />
+            • <a href="https://www.looduskalender.ee/n/node/2718">Looduskalender</a><br />
+            Rühmatööna vikerkaarest luuletuse kirjutamine ning selle esitlemine. <br />
+            <br />
+            <h4>Inglise keel ja muusika</h4>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/SLZcWGQQsmg">
+            </iframe><br />
+            <br />
+            <h4>Kunstiõpetus</h4>
+            • Õpilased kasutavad IKT vahendit otsides infot vikerkaarevärvide ja nimetuste kohta. <br />Siis moodustati värvipliiatsitest vikerkaar. Seal tuli tõlgendada ning seoseid luua, mida tähendab seitse värvi tiibasid. <br />
+            • Õpilased joonistasid vikerkaare ning otsisid internetist lisaks vikerkaare teemalisi meisterdusi(siin tuli kasuks inglise keele kasutus). <br />
+            • Leidsime vahva idee siduda see kunstiga - värvipaberist salli loomine koos narmastega. <br />
+            <br />
+            <h4>Tööõpetus</h4>
+            Tavalise tuuleveski meisterdamine jälgides juhendit matemaatika õpikust lk 25. <br />
+            • Vali endale sobiv vikerkaares esinev värv. <br />
+            • Tee ruudukujulise paberi diagonaalile sisselõiked nii nagu on joonisel näidatud. <br />
+            • Keera sisselõike üks serv õrnalt keskele. Jätka nii nagu joonisel on näidatud. <br />
+            • Kinnita sissekeeratud tipud pealt teibiga. <br />
+            Füüsika – Tuuleveski pöörlemisel tekkiv võimalik takistus, mis pärsib tuuleveski liikumist. <br />
+            • Kinnita veski naelaga varre külge. Selleks, et tiivad paremini pöörleksid, võid naelale tiiviku alla ja peale <br />
+            • Lisada helmed. <br />
+            Järgmisel vahetunnil läksid kõik õpilased õue proovima, kui hästi veskite tiivad pöörlevad ning tuli ka vaadelda kas esineb takistusi tuuleveski pöörlemisel. <br />
+            Loodusõpetus<br />
+            • Aknast vikerkaare värvide vaatlus porilombilt. <br />
+            • Vee,õli ja päikese koosmõju. Hiljem vestlus, mida märgati porilombil? <br />
+            • Vikerkaare värvide pildistamine<br />
+            <div class="galerii">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/9.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/3.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/4.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/5.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/6.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/7.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/8.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/%C3%B5pitegevusegalerii/9.jpg" class="d-block w-100" alt="...">
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
             </div>
-          </div>
-
-
-
-
-
-
-
-          <br />
-        Informeerin õppijaid õpieesmärkidest, sisust, õppekorraldusest, hindamismudelitest, kasutades vajadusel erinevaid infokanaleid.
-          Alati jagan infot ning informeerin oma õpilasi eelseisvatest suurematest projektidest. Valgustan õpilastele töö sisu ning temaatika, mida käsitlen antud töös. Kordame üle vormise nõuded, püstitame ühiselt eesmärgid, tähtajad ning hindamisel
-          lähtun Kernu Põhikooli hindamis alustest. Hindamisest teavitades neid kas e-kooli, päeviku või sõnalise teavitamise käigus.
-          <br / >
-
-
-          Pean ennast õpetatavates ainetes ning eripedagoogikas pädevaks. Täiendan ennast pidevalt iseseisvalt tutvudes erinevate võimalustega kuidas olla innovaatiline oma alal.
-          <br/>
-
-        <br/>
-          <h2>3.Õpikeskkonna kujundamine
-          </h2>
+            <br />
+            Informeerin õppijaid õpieesmärkidest, sisust, õppekorraldusest, hindamismudelitest, kasutades vajadusel erinevaid infokanaleid.
+            Alati jagan infot ning informeerin oma õpilasi eelseisvatest suurematest projektidest. Valgustan õpilastele töö sisu ning temaatika, mida käsitlen antud töös. Kordame üle vormise nõuded, püstitame ühiselt eesmärgid, tähtajad ning hindamisel
+            lähtun Kernu Põhikooli hindamis alustest. Hindamisest teavitades neid kas e-kooli, päeviku või sõnalise teavitamise käigus.
+            <br />
+            Pean ennast õpetatavates ainetes ning eripedagoogikas pädevaks. Täiendan ennast pidevalt iseseisvalt tutvudes erinevate võimalustega kuidas olla innovaatiline oma alal.
+            <br />
+            <br />
+            <h2>3.Õpikeskkonna kujundamine
+            </h2>
             <br />
             <strong>Kujundan füüsilist õpikeskkonda lähtuvalt õppijate vajadustest ja õpieesmärkidest ning tagan selle turvalisuse.</strong>
             Klassi füüsilisel kujundamisel ning sobiva keskkonna loomisel järgin tihti laudade asetust U või O kujulisena. Ümarad vormid loovad õpilase jaoks meeldiva ja koduse keskkonna. Vajadusel on alati võimalus laudade asetust muuta. Õppetöös on
-            meil õnneks võimalus kasutada ka teisi õpikeskondi(õuesõppeklass, IKT vahenditega klass, koridor, söökla ning metsa alune). Kuna koolimajas on käsil remont siis saame õpetajate ja õpilastega kaasa rääkida sisekujunduslikel teemadel. Rahulikud
+            meil õnneks võimalus kasutada ka teisi õpikeskondi(õuesõppeklass, IKT vahenditega klass, koridor, söökla ning metsa alune). Kuna koolimajas on käsil remont siis saame õpetajate ja õpilastega kaasa rääkida sisekujunduslikel teemadel.
+            Rahulikud
             heledad toonid loovad õpilasele õppetööks sobiliku harmoonilise keskkonna. Meie klassi seinu kaunistavad laste endi tehtud tööd.<br />
             <div class="galerii">
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -332,8 +352,6 @@
                   <div class="carousel-item">
                     <img src="https://raw.githubusercontent.com/nelemaide/nelemaide.github.io/master/galerii2/6.jpg" class="d-block w-100" alt="...">
                   </div>
-
-
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -345,17 +363,13 @@
                 </a>
               </div>
             </div>
-
-
-             
             <strong>Loon vaimselt, emotsionaalselt ja sotsiaalselt turvalise, arengut ja loovust toetava koostöise ning üksteist arvestava õpikeskkonna.</strong>
-            Loon õpilaste jaoks sõbraliku ja sobiva keskkonna. Erinevaid aktiivõppe mänge läbi viies, mis nõuavad füüsilist liikumist järgin alati turvalisuse ja ohutuse nõudeid. Õpetajana vastutan ma otseselt laste turvalisuse eest nii klassiruumis, kui
+            Loon õpilaste jaoks sõbraliku ja sobiva keskkonna. Erinevaid aktiivõppe mänge läbi viies, mis nõuavad füüsilist liikumist järgin alati turvalisuse ja ohutuse nõudeid. Õpetajana vastutan ma otseselt laste turvalisuse eest nii klassiruumis,
+            kui
             ka väljaspool kooli liigeldes. <br />
             Pinginaabreid komplekteerides arvestada suuresti õpilaste iseloomude ja natuuridega. Pinginaabri valikul pean silmas õpilaste käitumis ja iseloomuga seotud eripärasid.<br />
             HEV -õpilaste pinginaabriks on enamasti rahulikuma iseloomuga ja andekamad õpilased.Pean oluliseks, et õpilased täiendaksid üksteist ning jagaksid üksteisele eluks vajalikke oskusi. Nt arvestamine üksteiste erisustega, mis muudab meid
             inimestena hoolivateks ning märkavateks inimesteks.<br />
-
-
             <br />
             <strong>Kujundan motiveeriva õpikeskkonna, juhindudes õpimotivatsiooni kujunemise seaduspärasustest ning arvestades õppijate individuaalseid vajadusi.</strong>
             Kooli üheks põhiliseks ülesandeks on kujundada õpilasest motiveeritud õppija. Õpetaja keskseks rolliks on märgata õppija individuaalsust ja teha positiivseid tähelepanekuid tema suhtes. Õpetaja peabuskuma,kiitma, motiveerima oma
@@ -369,7 +383,6 @@
             Õpetajana olen ma oma õpilastega suheldes alati avatud ning sõbralik, ka sellisel juhul, kui toimunud on negatiivne juhtum, mille käigus on rikutud käitumisreegleid. Õpetajana vastutan ma otseselt oma sõnalise teksti eest, et see kellelgi
             kahju ei teeks. Läbi enda olemuse ja hinge loon õpikeskkonna, kus on meil kõigil meeldiv olla ja õppida. Kord nädalas valime me oma klassis nädalaõpilase, kes on millegi poolest teistest silma paistnud ning alati on need erinevad aspektid
             mida me hindame. Seda selleks, et kõik õpilased tunneks ennast hästi ja motiveeritult( nt selle nädala heategu, selle nädala märkaja või tubli õppija).
-
             <br /><br />
             <strong>Juhin klassi/rühma reeglite väljatöötamise protsessi koostöös õppijatega ning järgin kokkulepitud reeglite rakendamist oma igapäevatöös.</strong>
             Klassi reeglid töötame me välja koos õpilastega lähtudes koolid kodukorra eeskirjadest ning ühiskonna headest tavadest. Klassijuhata tunnis vestleme me distsipliinist ja lugupidamisest teiste õpilaste ning õpetajate vastu.
@@ -379,30 +392,28 @@
             Näitena on toimunud meie klassis intsident, kus klassi poisid käitusid ühe õpilase suhtes inetult. Probleemi lahendamiseks kaasasin näitlikud vahendid ning peegeldasime olukorda läbi oma tunnete, mis oleks siis kui sina langed kiusamise
             ohvriks. Kuidas lahendada olukord. Kuidas sa ennast tunneksid? Kuidas abi paluda olukorra lahendamisel? Õnneks klassijuhatajana pean tõdema, et meie klassis ei esine kiusamist ega vägivalda. Klassijuhataja on seadnud esikohale hoolimise ja
             märkasime. Usun, et õpetaja siirad tõekspidamised mängivad suurt rolli õpilase käitumisel. Seega ei pea ma kaasama sotsaalpedagoogi, psühholoogi ega lapsevanemaid.
-
             <br /><br />
             <strong>Analüüsin ennast õpetajana õppimist toetava õpikeskkonna kujundajana, lähtuvalt analüüsi tulemustest teen muudatusi õpikeskkonnas.</strong>
             Analüüsi tulemusena muudan õpikeskkonda, vajadusel muudan õpilaste kohti klassis, muudan ni füüsilist keskkonda kui ka leian alati võimaluse emotsionaalse keskkonna loomiseks. Minu põhiliseks eesmärkis on, aga väga head suhted õpilaste ja
             õpetajate vahel. Olen loonud teadliku keskkona, kus minu õpilased saavad toetud oma õpetajale.
-
-
-    </p>
-    <br />
-    <h4>Lingid minu koostatud õpetamis tegevuse failidele</h4>
-    <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Eesti%20keel%20etunnianal%C3%BC%C3%BCs.docx">Eestikeele tunnianalüüs</a>
-    <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Matemaatika%20tunnianal%C3%BC%C3%BCs.docx">Matemaatika tunnianalüüs</a>
-    <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Tundide%20ettevalmistus.docx">Tundide ettevalmistus</a>
-    <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/1KL%20-matemaatika%20tund.doc">1. klassi matemaatika tund</a>
-    <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/3KL%20-matemaatika%20tund.docx">3. klassi matemaatika tund</a>
-    <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/3KL-eesti%20keel.docx">3. klassi eestikeele tund</a>
-    <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Aabitsa%20t%C3%B6%C3%B6kava%20-%20september.pdf">Aabitsa septemberi töökava</a>
-    <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Aabitsa%20t%C3%B6%C3%B6kava%20-%20oktoober.pdf">Aabitsa oktoobri töökava</a>
-    <footer>
+      </p>
       <br />
-      <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Tagasi lehekülje algusesse</a>
-    </footer>
-  </div>
-
+      <h4>Lingid minu koostatud õpetamis tegevuse failidele</h4>
+      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Eesti%20keel%20etunnianal%C3%BC%C3%BCs.docx">Eestikeele tunnianalüüs</a>
+      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Matemaatika%20tunnianal%C3%BC%C3%BCs.docx">Matemaatika tunnianalüüs</a>
+      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Tundide%20ettevalmistus.docx">Tundide ettevalmistus</a>
+      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/1KL%20-matemaatika%20tund.doc">1. klassi matemaatika tund</a>
+      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/3KL%20-matemaatika%20tund.docx">3. klassi matemaatika tund</a>
+      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/3KL-eesti%20keel.docx">3. klassi eestikeele tund</a>
+      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Aabitsa%20t%C3%B6%C3%B6kava%20-%20september.pdf">Aabitsa septemberi töökava</a>
+      <br /><a href="https://github.com/nelemaide/nelemaide.github.io/raw/master/t%C3%B6%C3%B6kavad/Aabitsa%20t%C3%B6%C3%B6kava%20-%20oktoober.pdf">Aabitsa oktoobri töökava</a>
+      <footer>
+        <br />
+        <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Tagasi lehekülje algusesse</a>
+      </footer>
+    </div>
+  </main>
 </body>
+
 
 </html>

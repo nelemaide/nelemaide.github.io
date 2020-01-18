@@ -1,164 +1,148 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <style>
-    .sisu {
-      line-height: 30px;
-      padding-left: 260px;
-      padding-right: 260px;
-      text-align: justify;
+  .sisu {
+    line-height: 30px;
+    padding-left: 260px;
+    padding-right: 260px;
+    text-align: justify;
+  }
+  footer {
+    text-align: center;
+  }
+    main {
+      padding: 0;
     }
-
-    /* Three image containers (use 25% for four, and 50% for two, etc) */
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-
-    /* Clear floats after image containers */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    footer {
+    header {
+      position: sticky;
+      top: 0;
       text-align: center;
     }
   </style>
   <title>Kutseportfell</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
-
 <body>
-  <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Klassiõpetaja Nele Maide</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppija toetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/opetamine.html">Õpetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/arendusJaLoometegevus.html">Arendus-, loome- ja teadustegevus</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/eneseReflektsioon.html">Refleksioon ja professionaalne enesearendamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/koostoo.html">Koostöö ja juhendamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/HEV.html">Hariduslike erivajadustega õppija toetamine</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://nelemaide.github.io/labivadKompetentsid.html">Läbivad kompetentsid</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV <i class='far fa-file-word' style='font-size:1rem;color:orange'></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte <i
-              class='far fa-folder' style='font-size:1rem;color:orange'></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle <i class='far fa-folder'
-              style='font-size:1rem;color:orange'></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii <i class='far fa-image' style='font-size:1rem;color:orange'></i>
-          </a>
-        </li>
-      </ul>
-
+  <main>
+    <header>
+      <div class="navi">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <button class="navbar-toggler" data-toggle="collapse" data-target=".navbars">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbars" id="collapse_target1">
+            <ul class="navbar-nav mx-auto">
+              <a class="navbar-brand">
+                <span>Nele Maide õpetaja kutseportfoolio</span>
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/minaopetajana.html">Mina õpetajana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/opiJaOpetamistegevus.html">Õpi ja õpetamistegevuse kavandamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/oppimiseJaArenguToetamine.html">Õppija toetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/opetamine.html">Õpetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/arendusJaLoometegevus.html">Arendus-, loome- ja teadustegevus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/eneseReflektsioon.html">Refleksioon ja professionaalne enesearendamine</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <div class="collapse navbar-collapse navbars" id="collapse_target2">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/koostoo.html">Koostöö ja juhendamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/HEV.html">Hariduslike erivajadustega õppija toetamine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://nelemaide.github.io/labivadKompetentsid.html">Läbivad kompetentsid</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/raw/master/nele%20cv.docx">Minu CV <i class='far fa-file-word' style='font-size:1rem;color:orange'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Minu%20haridust%20t%C3%B5endavad%20dokumendid%20ja%20EHIS-e%20v%C3%A4ljav%C3%B5te">Minu haridust tõendavad dokumendid ja EHIS-e väljavõte <i
+                    class='far fa-folder' style='font-size:1rem;color:orange'></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/nelemaide/nelemaide.github.io/tree/master/Iseloomustused%20ja%20hinnangud%20minu%20t%C3%B6%C3%B6le">Iseloomustused ja hinnangud minu tööle <i class='far fa-folder'
+                    style='font-size:1rem;color:orange'></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nelemaide.github.io/galerii.html">Galerii <i class='far fa-image' style='font-size:1rem;color:orange'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="sisu">
+      <h4>Nõustamine ja mentorlus</h4>
+      Ise ma mentor ei ole ning seega ei osale ma ka mentoriõpetajaks olemisel. Küll, aga alates septembrist 2019.aastast on mulle määratud mentor. Mentorõpetajana juhendab, toetab ja õpetab ta mind suure põhjalikusega. Leian, et selline toetav
+      mentorlus on noorele õpetajale väga oluline. Mentori keskseks ülesandeks on mind toetada õpetajaks kujunemisel. Minu mentor aitab mind teoreetiliste teadmiste osas siduda praktilise õpetajatööga. Pärast igat vaatlust toimub arutelu, kus mentor
+      reflekteerib nähtut/kogetut ja me saame omavahel arutleda tunnis toimunu üle. Mentoluse põhieesmärk on jagada mulle praktilisi teadmisi ja oskusi liitklassis õpetamise kohta.
+      <br /><br />
+      <h4>Lapsevanemate nõustamine
+      </h4>
+      Töös erivajadustega õpilastega on tähtsal kohal koostöö lapsevanematega. Õpilase õpetamine ja arendamine ei ole üksnes vaid õpetaja töö. Siinkohal peavad tihedat koostööd tegema lapsevanem ning õpetaja saavutamaks ühiseid eesmärke.Ühine
+      koostöö kooli ja kodu vahel õpetaja tegevusele suurema efektiivse ja tulemused on õppetöös märgatavalt suuremad. Oluline on kodus jälgida õpetaja poolseid soovitusi ning kinnistada õpilase jaoks õpitu.Väga suurel määral saavad lapsevanemad oma
+      last toetada. Korrata koolis õpitut, teha kodutööd ära, otsida põnevaid ning ainega seonduvaid materjale.<br/>
+    </br/> Tihti annan koju kaasa logopeedilist materjali, mis toetab lapse lugemis oskuse arendamist. Selleks, et õpilast paremini kodus toetada
+      tuleb nõustada ka lapsevanemat. Näiteks artikulatsiooni harjutuste õieti sooritamine ning jälgimine, kuidas laps harjutusi sooritab. Siin on oluline roll lapsevanemal. Eripedagoogina näitan ma kuidas sõrme või pulgaga R-häälik põrisema panna.
+      Kui õpilane selle vibratsiooni tunnetuse kätte saab siis varsti tuleb ka R- häälik. Mõningatel juhtudel on vajalik konsulteerida hambaarstiga, kes vaatab üle lapse hambumise. Kui miskit puudu või segab siis on raske õige õhuvoolu ja keele
+      asetusega. <br />
+    </br/>
+      Lapsevanemate nõustamine toimub tavaliselt arenguvestluse näol. Arenguvestlused toimuvad üks kord aastas, HEV- laste puhul teeme koostööd lapsevanematega nädalas ühel korral. Arenguvestlusel toon ma esmalt välja nii õpilase tugevused kui ka
+      arendamist vajavad oskused, teadmised ning pädevused välja. Enne arenguvestluse algust küsin ma vanematelt tema lapse tugevate külgede kohta, palun iseoloomustada tema last positiivses võtmes ning palun lapsevanemal vestelda lapse saavutustest
+      tema
+      huvialas.
+      Edasi jätkan küsimustega, mis puudutab lapse arendamist vajavad küljed. Seejärel püstitame üheskoos ühised eesmärgid, mille poole me ühiselt püüdleme. Arenguvestlusesse kaasan võimalusel ka logopeedi. Arenguvestluse alguses annan ülevaate
+      õpilase akadeemilistest tulemustest ning näitan koolis tehtud töid (igat sorti materjalid, sh ka näiteks kunsti tunnis joonistatud pildid). Lapsevanemal on võimalik igal ajal minuga kaasa rääkida. Üheskoos arutame õpilase sotsiaalsete ja
+      emotsionaalsete oskuste üle (eakaaslastega jms). Arenguvestluse lõpus teen kokkuvõte, milles toon välja peamised arenduseesmärgid järgmiseks pooleks aastaks. Järgmisel arenguvestlustel vaatame üle, kas kokkulepitud tegevusi täideti (nii
+      õpetaja kui lapsevanema poolt) ning kas nendest on olnud abi. Vajadusel tegevuskava täiendatakse või muudetakse.
+      <br /><br />
+      <h4>Õpilase nõustamine</h4>
+      Olen liige. Rehabilitatsiooniplaani täidan selles sätestatud tegevuskava alusel. Kuna tegemist on kõneerivajadustega õpilastega, tegelen tundides peamiselt lugemis-, kirjutamis- ja jutustamisoskuse arendamisega. Rehabilitatsioonitunde viin
+      läbi kaks korda nädalas peale tundide lõppu. Pärast igat rehabilitatsioonitunni lõppu täidan õpilase kohta andmestiku, kuhu sisestan tunni teema ja eesmärgi ning samuti tunni jooksul tehtud tähelepanekud. Toon selle kohta ka näite:<br />
+      <strong>Eesmärk:</strong> Lugemisoskuse arendamine “Karu suur abiline”<br />
+      <strong>Tähelepanekud:</strong> Õpilane tunneb enamikke väikseid trükitähti ( õ,ä,ü ja d tähe puhul eksib). Loeb häälega veerides ja pikemaid sõnu ei oska veel kokku lugeda. Vajab teksti lugemisel kõrvalist abi ning toetust. Teksti
+      põhjal küsimustele vastamine on väga keeruline ning siin saan ma õpetajana õpilast toetada suunavate küsimustega. Abistades vastabõpilane küsimustele teksti kohta. Lausete moodustamine teksti kohta on väga keeruline.<br />
+      <strong>Eesmärk:</strong> Lugemisoskuse, jutustamisoskuse ja kirjutamisoskuse arendamine. Kinnistamist vajavad veel d,õ,ä.ö ja ü täht. <br />
+      <strong>Tähelepanekud:</strong> Õpilane tunneb enamikke suuri kirjatähti. Õpilane kirjutab tähe õige kujuga, kuid ei suuda jälgida õiget alguspunkti. Kirjutamine on raskendatud, kuna surve pillatsile on väga tugev. Arendamist vajab
+      lugemisoskuse kujundamine. <br />
+      Algklassides ei saa õpilased mitte hindeid vaid sõnalisi või kirjalikke hinnanguid. Tunnis kasutan alati kujundavat sõnalist hinnangut andmaks kohest tagasisidet õpilase sooritusele. Ütlen, mis oli hästi ja mis vajaks veel
+      harjutamist. Õpetajana pean oskama hinnagut anda nii, et õpilane ei tõlgendakse seda negatiivse pildina. Oluline on motiveerida õpilast läbi positiivsuse<br />
+      Õpilase abistamiseks viin läbi konsultatsioone. Nendes tundides saan süvendatult ja üks-ühele õpetada.
+      <br /><br />
+      <h4>Kolleegide nõustamine
+      </h4>
+      Igapäevases töös ma nõustamisega kokku ei puutu ega tegele. Töötades oma teisel töökohal eripedagoogina siis sel on mu töö sisuks idividuaalsed tunnid ning tegevused HEV lastega(lasteaed, kool). Üheks tööosaks on ka õpetajate
+      nõustamine kuidas ühes või teises olukorras toime tulla käitumiseripäradega lapsega. Klassiõpetajatel on alati tekkinud hulgaliselt küsimusi, kuidas konfliktsituatsioonides õpilasega toime tulla.või jagan juhiseid õpiraskutega
+      lapse õpetamisel.Koostöös õpetajaga töötame välja ühiselt tegevusplaani.
+      <footer>
+        <br />
+        <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Tagasi lehekülje algusesse</a>
+      </footer>
     </div>
-  </nav>
-  <div class="sisu">
-    <h4>Nõustamine ja mentorlus
-    </h4>
-
-
-    Ise ma mentor ei ole ning seega ei osale ma ka mentoriõpetajaks olemisel. Küll, aga alates septembrist 2019.aastast on mulle määratud mentor. Mentorõpetajana juhendab, toetab ja õpetab ta mind suure põhjalikusega. Leian, et selline toetav
-    mentorlus on noorele õpetajale väga oluline. Mentori keskseks ülesandeks on mind toetada õpetajaks kujunemisel. Minu mentor aitab mind teoreetiliste teadmiste osas siduda praktilise õpetajatööga. Pärast igat vaatlust toimub arutelu, kus mentor
-    reflekteerib nähtut/kogetut ja me saame omavahel arutleda tunnis toimunu üle. Mentoluse põhieesmärk on jagada mulle praktilisi teadmisi ja oskusi liitklassis õpetamise kohta.
-
-
-    <br /><br />
-    <h4>Lapsevanemate nõustamine
-    </h4>
-    Töös erivajadustega õpilastega on tähtsal kohal koostöö lapsevanematega. Õpilase õpetamine ja arendamine ei ole üksnes vaid õpetaja töö. Siinkohal peavad tihedat koostööd tegema lapsevanem ning õpetaja saavutamaks ühiseid eesmärke.Ühine
-    koostöö kooli ja kodu vahel õpetaja tegevusele suurema efektiivse ja tulemused on õppetöös märgatavalt suuremad. Oluline on kodus jälgida õpetaja poolseid soovitusi ning kinnistada õpilase jaoks õpitu.Väga suurel määral saavad lapsevanemad oma
-    last toetada. Korrata koolis õpitut, teha kodutööd ära, otsida põnevaid ning ainega seonduvaid materjale.<br/>
-
-  </br/> Tihti annan koju kaasa logopeedilist materjali, mis toetab lapse lugemis oskuse arendamist. Selleks, et õpilast paremini kodus toetada
-    tuleb nõustada ka lapsevanemat. Näiteks artikulatsiooni harjutuste õieti sooritamine ning jälgimine, kuidas laps harjutusi sooritab. Siin on oluline roll lapsevanemal. Eripedagoogina näitan ma kuidas sõrme või pulgaga R-häälik põrisema panna.
-    Kui õpilane selle vibratsiooni tunnetuse kätte saab siis varsti tuleb ka R- häälik. Mõningatel juhtudel on vajalik konsulteerida hambaarstiga, kes vaatab üle lapse hambumise. Kui miskit puudu või segab siis on raske õige õhuvoolu ja keele
-    asetusega. <br />
-
-  </br/>
-    Lapsevanemate nõustamine toimub tavaliselt arenguvestluse näol. Arenguvestlused toimuvad üks kord aastas, HEV- laste puhul teeme koostööd lapsevanematega nädalas ühel korral. Arenguvestlusel toon ma esmalt välja nii õpilase tugevused kui ka
-    arendamist vajavad oskused, teadmised ning pädevused välja. Enne arenguvestluse algust küsin ma vanematelt tema lapse tugevate külgede kohta, palun iseoloomustada tema last positiivses võtmes ning palun lapsevanemal vestelda lapse saavutustest
-    tema
-    huvialas.
-    Edasi jätkan küsimustega, mis puudutab lapse arendamist vajavad küljed. Seejärel püstitame üheskoos ühised eesmärgid, mille poole me ühiselt püüdleme. Arenguvestlusesse kaasan võimalusel ka logopeedi. Arenguvestluse alguses annan ülevaate
-    õpilase akadeemilistest tulemustest ning näitan koolis tehtud töid (igat sorti materjalid, sh ka näiteks kunsti tunnis joonistatud pildid). Lapsevanemal on võimalik igal ajal minuga kaasa rääkida. Üheskoos arutame õpilase sotsiaalsete ja
-    emotsionaalsete oskuste üle (eakaaslastega jms). Arenguvestluse lõpus teen kokkuvõte, milles toon välja peamised arenduseesmärgid järgmiseks pooleks aastaks. Järgmisel arenguvestlustel vaatame üle, kas kokkulepitud tegevusi täideti (nii
-    õpetaja kui lapsevanema poolt) ning kas nendest on olnud abi. Vajadusel tegevuskava täiendatakse või muudetakse.
-
-
-    <br /><br />
-    <h4>Õpilase nõustamine
-    </h4>
-    Olen liige. Rehabilitatsiooniplaani täidan selles sätestatud tegevuskava alusel. Kuna tegemist on kõneerivajadustega õpilastega, tegelen tundides peamiselt lugemis-, kirjutamis- ja jutustamisoskuse arendamisega. Rehabilitatsioonitunde viin
-    läbi kaks korda nädalas peale tundide lõppu. Pärast igat rehabilitatsioonitunni lõppu täidan õpilase kohta andmestiku, kuhu sisestan tunni teema ja eesmärgi ning samuti tunni jooksul tehtud tähelepanekud. Toon selle kohta ka näite:<br />
-    <strong>Eesmärk:</strong> Lugemisoskuse arendamine “Karu suur abiline”<br />
-    <strong>Tähelepanekud:</strong> Õpilane tunneb enamikke väikseid trükitähti ( õ,ä,ü ja d tähe puhul eksib). Loeb häälega veerides ja pikemaid sõnu ei oska veel kokku lugeda. Vajab teksti lugemisel kõrvalist abi ning toetust. Teksti
-    põhjal küsimustele vastamine on väga keeruline ning siin saan ma õpetajana õpilast toetada suunavate küsimustega. Abistades vastabõpilane küsimustele teksti kohta. Lausete moodustamine teksti kohta on väga keeruline.<br />
-
-    <strong>Eesmärk:</strong> Lugemisoskuse, jutustamisoskuse ja kirjutamisoskuse arendamine. Kinnistamist vajavad veel d,õ,ä.ö ja ü täht. <br />
-
-    <strong>Tähelepanekud:</strong> Õpilane tunneb enamikke suuri kirjatähti. Õpilane kirjutab tähe õige kujuga, kuid ei suuda jälgida õiget alguspunkti. Kirjutamine on raskendatud, kuna surve pillatsile on väga tugev. Arendamist vajab
-    lugemisoskuse kujundamine. <br />
-    Algklassides ei saa õpilased mitte hindeid vaid sõnalisi või kirjalikke hinnanguid. Tunnis kasutan alati kujundavat sõnalist hinnangut andmaks kohest tagasisidet õpilase sooritusele. Ütlen, mis oli hästi ja mis vajaks veel
-    harjutamist. Õpetajana pean oskama hinnagut anda nii, et õpilane ei tõlgendakse seda negatiivse pildina. Oluline on motiveerida õpilast läbi positiivsuse<br />
-    Õpilase abistamiseks viin läbi konsultatsioone. Nendes tundides saan süvendatult ja üks-ühele õpetada.
-
-
-    <br /><br />
-    <h4>Kolleegide nõustamine
-    </h4>
-    Igapäevases töös ma nõustamisega kokku ei puutu ega tegele. Töötades oma teisel töökohal eripedagoogina siis sel on mu töö sisuks idividuaalsed tunnid ning tegevused HEV lastega(lasteaed, kool). Üheks tööosaks on ka õpetajate
-    nõustamine kuidas ühes või teises olukorras toime tulla käitumiseripäradega lapsega. Klassiõpetajatel on alati tekkinud hulgaliselt küsimusi, kuidas konfliktsituatsioonides õpilasega toime tulla.või jagan juhiseid õpiraskutega
-    lapse õpetamisel.Koostöös õpetajaga töötame välja ühiselt tegevusplaani.
-
-    <footer>
-      <br />
-      <a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Tagasi lehekülje algusesse</a>
-    </footer>
-  </div>
-
-
+  </main>
 </body>
-
 </html>
